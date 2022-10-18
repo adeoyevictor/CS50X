@@ -1,7 +1,10 @@
 #include <cs50.h>
 #include <stdio.h>
 
-string str(int i) 
+void ht(int i)
+{
+  
+}
 
 int main(void)
 {
