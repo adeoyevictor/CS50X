@@ -5,7 +5,7 @@ void printSpaces(int i)
 {
     for(int j = i; j > 0 ; j--)
     {
-        print(" ");
+        printf(" ");
     }
 }
 
@@ -13,7 +13,7 @@ void printHashTags(int i)
 {
     for(int j = i; j > 0 ; j--)
     {
-        print("#");
+        printf("#");
     }
 }
 
@@ -28,6 +28,11 @@ int main(void)
 
     for(int i = 1; i <= height; i++)
     {
-        printHashtag(i);
+        printSpaces(height - i);
+        printHashTags(i);
+        printSpaces(2);
+        printHashTags(i);
+        printf("\n");
+
     }
 }
