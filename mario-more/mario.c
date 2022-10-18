@@ -17,14 +17,6 @@ void printHashTags(int i)
     }
 }
 
-void printHashtag(int i)
-{
-    for(int j = 1; j < i+1 ;j++)
-    {
-        pr();
-    }
-}
-
 int main(void)
 {
     int height;
