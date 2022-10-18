@@ -5,7 +5,7 @@ void pr(void)
 {
     printf("#");
     printf(" ");
-    printf("#");
+    printf("#\n");
 }
 
 void printHashtag(int i)
