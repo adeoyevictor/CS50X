@@ -1,11 +1,14 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void pr()
+void pr(void)
+{
+    printf("#");
+}
 
 void printHashtag(int i)
 {
-
+    for(int i = 1; i )
 }
 
 int main(void)
