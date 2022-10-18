@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+void pr()
+
 void printHashtag(int i)
 {
 
