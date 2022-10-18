@@ -24,7 +24,7 @@ int main(void)
     {
         height = get_int("Height: ");
     }
-    while(height  < 1 || height > 8);
+    while(height  < 1 || height > 10);
 
     for(int i = 1; i <= height; i++)
     {
