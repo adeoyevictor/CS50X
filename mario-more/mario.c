@@ -1,11 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void printSpaces(int i)
+void printSpaces(int 3)
 {
-    printf("#");
-    printf(" ");
-    printf("#\n");
+    for(int j = )
 }
 
 void printHashtag(int i)
