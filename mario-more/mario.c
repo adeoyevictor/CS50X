@@ -3,7 +3,7 @@
 
 void printSpaces(int i)
 {
-    for(int j = i; j > 0 ; j--)
+    for (int j = i; j > 0 ; j--)
     {
         printf(" ");
     }
@@ -11,7 +11,7 @@ void printSpaces(int i)
 
 void printHashTags(int i)
 {
-    for(int j = i; j > 0 ; j--)
+    for (int j = i; j > 0 ; j--)
     {
         printf("#");
     }
@@ -24,9 +24,9 @@ int main(void)
     {
         height = get_int("Height: ");
     }
-    while(height  < 1 || height > 8);
+    while (height  < 1 || height > 8);
 
-    for(int i = 1; i <= height; i++)
+    for (int i = 1; i <= height; i++)
     {
         printSpaces(height - i);
         printHashTags(i);
