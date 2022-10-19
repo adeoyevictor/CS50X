@@ -67,8 +67,8 @@ int main(void)
 
 
     }
-    int sum = mutiplied + notMultiplied;
-    int firstTwoDigits = (firstNumber*10) + secondNumber
+    int sum = multiplied + notMultiplied;
+    int firstTwoDigits = (firstNumber*10) + secondNumber;
     if(sum % 10 == 0){
         if(firstNumber == 4){
             if(noOfDigits==13||noOfDigits==16)
