@@ -21,9 +21,7 @@ int main(void)
     while(true)
     {
         noOfDigits++;
-        if(num < 100){
-            secondNumber = num % 10;
-        }
+
          if(num<10)
          {
             firstNumber = num;
@@ -42,7 +40,9 @@ int main(void)
             }
             break;
          }
-
+            if(num < 100){
+                secondNumber = num % 10;
+            }
         int digit = num % 10;
         num = num/10;
 
