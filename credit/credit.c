@@ -44,14 +44,14 @@ int main(void)
         if(i % 2 == 1)
         {
             digit = digit * 2;
-            if(digit > 10)
+            if(digit > 9)
             {
                 digit = sumDigits(digit);
             }
             multiplied += digit;
         }
         else if(i % 2 == 0){
-            if(digit > 10)
+            if(digit > 9)
             {
                 digit = sumDigits(digit);
             }
