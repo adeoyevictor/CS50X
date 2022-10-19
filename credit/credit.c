@@ -68,8 +68,13 @@ int main(void)
     int sum = mutiplied + notMultiplied;
     if(sum % 10 == 0){
         if(firstNumber == 4){
-            printf("VISA\n");
+            if(noOfDigits==13||noOfDigits==16)
+            {
+                printf("VISA\n");
+            }
         }
+
+        if
 
     }
     else{
