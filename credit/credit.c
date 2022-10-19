@@ -11,17 +11,15 @@ int sumDigits(int n)
 int main(void)
 {
     long num = get_long("Number: ");
-    int i = 2;
+    int noOfDigits = 0;
     int multiplied = 0;
     int notMultiplied = 0;
-    int noOfDigits = 0;
-    string typeOfCard = "";
     int firstNumber = 0;
     int secondNumber = 0;
+    int i = 2;//why
 
     while(true)
     {
-
         noOfDigits++;
         if(num < 100){
             secondNumber = num % 10;
@@ -95,5 +93,5 @@ int main(void)
     else{
         printf("INVALID\n");
     }
-    printf("%i\n", notMultiplied);
+    printf("%i %i\n", firstNumber,secondNumber);
 }
