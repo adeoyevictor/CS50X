@@ -13,13 +13,16 @@ int main(void)
     int multiplied = 0;
     int notMultiplied = 0;
     int noOfDigits = 0;
-
+    string typeOfCard = "";
     while(true)
     {
 
         noOfDigits++
          if(num<10)
          {
+            if(num == 4){
+                typeOfCard = "VISA";
+            }
              if(i % 2 == 1)
              {
                 num = num * 2;
