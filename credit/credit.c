@@ -68,11 +68,11 @@ int main(void)
     int sum = mutiplied + notMultiplied;
     if(sum % 10 == 0){
         if(firstNumber == 4){
-            printf("VISA");
+            printf("VISA\n");
         }
 
     }
     else{
-        printf("INVALID");
+        printf("INVALID\n");
     }
 }
