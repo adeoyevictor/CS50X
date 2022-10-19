@@ -66,7 +66,7 @@ int main(void)
 
     }
     int sum = mutiplied + notMultiplied;
-    int firstTwoDigits = sumDigits(fir)
+    int firstTwoDigits = (firstNumber*10) + secondNumber
     if(sum % 10 == 0){
         if(firstNumber == 4){
             if(noOfDigits==13||noOfDigits==16)
@@ -74,7 +74,20 @@ int main(void)
                 printf("VISA\n");
             }
         }
-        else if()
+        else if(firstTwoDigits==34||firstTwoDigits==37)
+        {
+            if(noOfDigits==15)
+            {
+                printf("AMEX\n");
+            }
+        }
+        else if(firstTwoDigits==51||firstTwoDigits==52||firstTwoDigits==53||firstTwoDigits==54||firstTwoDigits==55)
+        {
+            if(noOfDigits==16)
+            {
+                printf("MASTERCARD\n");
+            }
+        }
 
     }
     else{
