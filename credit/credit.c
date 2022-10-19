@@ -20,12 +20,12 @@ int main(void)
             // do something
              if(i % 2 == 1)
              {
-                digit = digit * 2;
-                if(digit > 10)
+                num = num * 2;
+                if(num > 10)
                 {
-                    digit = sumDigits(digit);
+                    num = sumDigits(num);
                 }
-                multiplied += digit;
+                multiplied += num;
             }
             else if(i % 2 == 0)
             {
