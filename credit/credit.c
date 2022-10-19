@@ -66,6 +66,7 @@ int main(void)
 
     }
     int sum = mutiplied + notMultiplied;
+    int firstTwoDigits = sumDigits(fir)
     if(sum % 10 == 0){
         if(firstNumber == 4){
             if(noOfDigits==13||noOfDigits==16)
@@ -73,8 +74,7 @@ int main(void)
                 printf("VISA\n");
             }
         }
-
-        if
+        else if()
 
     }
     else{
