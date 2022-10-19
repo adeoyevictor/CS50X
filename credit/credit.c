@@ -62,7 +62,7 @@ int main(void)
             }
             notMultiplied += digit;
         }
-
+        i++;
 
     }
     int sum = multiplied + notMultiplied;
@@ -93,5 +93,5 @@ int main(void)
     else{
         printf("INVALID\n");
     }
-    printf("%i\n", notMultiplied);
+    printf("%i\n", multiplied);
 }
