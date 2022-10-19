@@ -16,6 +16,8 @@ int main(void)
 
     while(true)
     {
+
+        noOfDigits++
          if(num<10)
          {
              if(i % 2 == 1)
