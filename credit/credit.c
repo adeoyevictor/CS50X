@@ -18,6 +18,22 @@ int main(void)
          if(num<10)
          {
             // do something
+             if(i % 2 == 1)
+             {
+            digit = digit * 2;
+            if(digit > 10)
+            {
+                digit = sumDigits(digit);
+            }
+            multiplied += digit;
+        }
+        else if(i % 2 == 0){
+            if(digit > 10)
+            {
+                digit = sumDigits(digit);
+            }
+            notMultiplied += digit;
+        }
             break;
          }
 
