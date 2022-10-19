@@ -3,7 +3,9 @@
 
 int sumDigits(int n)
 {
-
+ int lastNumber = n%10;
+ int firstNumber = n/10;
+ return lastNumber + firstNumber;
 }
 
 int main(void)
