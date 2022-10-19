@@ -14,15 +14,19 @@ int main(void)
     int notMultiplied = 0;
     int noOfDigits = 0;
     string typeOfCard = "";
+    int firstNumber = 0;
+    int secondNumber = 0;
+
     while(true)
     {
 
         noOfDigits++
+        if(num < 100){
+            secondNumber = num % 10;
+        }
          if(num<10)
          {
-            if(num == 4){
-                typeOfCard = "VISA";
-            }
+            firstNumber = num;
              if(i % 2 == 1)
              {
                 num = num * 2;
@@ -63,6 +67,9 @@ int main(void)
     }
     int sum = mutiplied + notMultiplied;
     if(sum % 10 == 0){
+        if(firstNumber == 4){
+            printf("VISA");
+        }
 
     }
     else{
