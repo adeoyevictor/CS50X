@@ -93,5 +93,5 @@ int main(void)
     else{
         printf("INVALID\n");
     }
-    printf("%i %i\n", firstNumber,secondNumber);
+    printf("%i\n", notMultiplied);
 }
