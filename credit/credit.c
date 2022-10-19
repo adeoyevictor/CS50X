@@ -93,5 +93,4 @@ int main(void)
     else{
         printf("INVALID\n");
     }
-    printf("%i\n", multiplied);
 }
