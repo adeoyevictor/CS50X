@@ -22,7 +22,7 @@ int main(void)
     while(true)
     {
 
-        noOfDigits++
+        noOfDigits++;
         if(num < 100){
             secondNumber = num % 10;
         }
