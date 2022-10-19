@@ -12,12 +12,12 @@ int main(void)
     int i = 2;
     int multiplied = 0;
     int notMultiplied = 0;
+    int noOfDigits = 0;
 
     while(true)
     {
          if(num<10)
          {
-            // do something
              if(i % 2 == 1)
              {
                 num = num * 2;
@@ -26,14 +26,10 @@ int main(void)
                     num = sumDigits(num);
                 }
                 multiplied += num;
-            }
+             }
             else if(i % 2 == 0)
             {
-                if(digit > 10)
-                {
-                    digit = sumDigits(digit);
-                }
-                notMultiplied += digit;
+                notMultiplied += num;
             }
             break;
          }
@@ -65,6 +61,6 @@ int main(void)
 
     }
     else{
-        printf("INVALID")
+        printf("INVALID");
     }
 }
