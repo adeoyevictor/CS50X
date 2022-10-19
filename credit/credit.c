@@ -7,7 +7,7 @@ int sumDigits(int n)
  int firstNumber = n/10;
  return lastNumber + firstNumber;
 }
-
+//PASS
 int main(void)
 {
     long num = get_long("Number: ");
@@ -95,4 +95,5 @@ int main(void)
     else{
         printf("INVALID\n");
     }
+    printf("%i", noOfDigits);
 }
