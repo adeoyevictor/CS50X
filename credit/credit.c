@@ -43,6 +43,7 @@ int main(void)
             if(num < 100){
                 secondNumber = num % 10;
             }
+        // CHECKING
         int digit = num % 10;
         num = num/10;
 
