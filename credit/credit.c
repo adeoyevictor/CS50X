@@ -28,7 +28,7 @@ int main(void)
              if(i % 2 == 1)
              {
                 num = num * 2;
-                if(num > 10)
+                if(num > 9)
                 {
                     num = sumDigits(num);
                 }
@@ -66,6 +66,7 @@ int main(void)
         i++;
 
     }
+    
     int sum = multiplied + notMultiplied;
     int firstTwoDigits = (firstNumber*10) + secondNumber;
     if(sum % 10 == 0){
