@@ -56,10 +56,10 @@ int main(void)
             multiplied += digit;
         }
         else if(i % 2 == 0){
-            if(digit > 9)
-            {
-                digit = sumDigits(digit);
-            }
+            // if(digit > 9)
+            // {
+            //     digit = sumDigits(digit);
+            // }
             notMultiplied += digit;
         }
         i++;
