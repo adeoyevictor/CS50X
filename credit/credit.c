@@ -16,7 +16,7 @@ int main(void)
     int notMultiplied = 0;
     int firstNumber = 0;
     int secondNumber = 0;
-    int i = 2;//why
+    int i = 0;//why
 
     while(true)
     {
