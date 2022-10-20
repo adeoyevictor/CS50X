@@ -66,7 +66,7 @@ int main(void)
         i++;
 
     }
-    
+
     int sum = multiplied + notMultiplied;
     int firstTwoDigits = (firstNumber*10) + secondNumber;
     if(sum % 10 == 0){
@@ -75,6 +75,10 @@ int main(void)
             {
                 printf("VISA\n");
             }
+             else
+             {
+                printf("INVALID\n");
+              }
         }
         else if(firstTwoDigits==34||firstTwoDigits==37)
         {
@@ -82,6 +86,10 @@ int main(void)
             {
                 printf("AMEX\n");
             }
+             else
+             {
+                printf("INVALID\n");
+             }
         }
         else if(firstTwoDigits==51||firstTwoDigits==52||firstTwoDigits==53||firstTwoDigits==54||firstTwoDigits==55)
         {
@@ -89,6 +97,10 @@ int main(void)
             {
                 printf("MASTERCARD\n");
             }
+             else
+             {
+                printf("INVALID\n");
+             }
         }
 
     }
