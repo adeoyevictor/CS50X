@@ -3,9 +3,9 @@
 
 int sumDigits(int n)
 {
- int lastNumber = n%10;
- int firstNumber = n/10;
- return lastNumber + firstNumber;
+    int lastNumber = n % 10;
+    int firstNumber = n / 10;
+    return lastNumber + firstNumber;
 }
 //PASS
 int main(void)
@@ -18,23 +18,23 @@ int main(void)
     int secondNumber = 0;
     int i = 0;//why
 
-    while(true)
+    while (true)
     {
         noOfDigits++;
 
-         if(num<10)
-         {
+        if (num < 10)
+        {
             firstNumber = num;
-             if(i % 2 == 1)
-             {
+            if (i % 2 == 1)
+            {
                 num = num * 2;
-                if(num > 9)
+                if (num > 9)
                 {
                     num = sumDigits(num);
                 }
                 multiplied += num;
-             }
-            else if(i % 2 == 0)
+            }
+            else if (i % 2 == 0)
             {
                 notMultiplied += num;
             }
