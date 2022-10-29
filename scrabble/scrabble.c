@@ -29,12 +29,12 @@ int compute_score(string word)
     {
         if(word[i] >= 'A' || word[i] <= 'Z')
         {
-
+            points += POINTS[c-65];
         }
         else if(word[i] >= 'a' || word[i] <= 'z')
         {
-            int c = toupper(word[i])
-            points += POINTS[c-65]
+            int c = toupper(word[i]);
+            points += POINTS[c-65];
         }
         else
         {
