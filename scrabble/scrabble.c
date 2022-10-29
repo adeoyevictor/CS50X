@@ -27,13 +27,17 @@ int compute_score(string word)
     int points = 0;
     for(int i = 0 , n = strlen(word); i < n ; i++)
     {
-        if(word[i])
+        if(word[i] >= 'A' || word[i] <= 'Z')
+        {
+
+        }
+        else if(word[i] >= 'a' || word[i] <= 'z')
         {
 
         }
         else
         {
-
+            points += 0
         }
     }
 }
