@@ -39,11 +39,11 @@ int compute_score(string word)
     int points = 0;
     for(int i = 0 , n = strlen(word); i < n ; i++)
     {
-        if(word[i] >= 'A' || word[i] <= 'Z')
+        if(word[i] >= 'A' && word[i] <= 'Z')
         {
             points += POINTS[word[i]-65];
         }
-        else if(word[i] >= 'a' || word[i] <= 'z')
+        else if(word[i] >= 'a' && word[i] <= 'z')
         {
             int c = toupper(word[i]);
             points += POINTS[c-65];
