@@ -4,9 +4,9 @@
 
 int main(void)
 {
-    int letters;
-    int words;
-    int sentences;
+    int letters = 0;
+    int words = 0;
+    int sentences = 0;
     string text = get_string("Text: ");
     for (int i = 0, n = strlen(text); i < n; i++)
     {
