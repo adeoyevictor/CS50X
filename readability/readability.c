@@ -15,6 +15,8 @@ int main(void)
     int words = count_words(text);
     int sentences = count_sentences(text);
     int index = calc_index(letters, words, sentences);
+
+
 }
 
 
@@ -26,7 +28,10 @@ int main(void)
 
 int calc_index(int letters, int words, int sentences)
 {
-    float L = 
+    float L = (letters * 100) / words;
+    float S = (sentences * 100) / words;
+
+    return (int) (0.0588 * L - 0.296 * S - 15.8)
 }
 
 
