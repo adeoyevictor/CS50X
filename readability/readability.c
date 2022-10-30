@@ -31,8 +31,8 @@ int calc_index(int letters, int words, int sentences)
 {
     float L = (letters * 100) / words;
     float S = (sentences * 100) / words;
-
-    return (int) (0.0588 * L - 0.296 * S - 15.8)
+    float index = round(0.0588 * L - 0.296 * S - 15.8);
+    return (int) index;
 }
 
 
