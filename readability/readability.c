@@ -10,6 +10,9 @@ int main(void)
     string text = get_string("Text: ");
     for (int i = 0, n = strlen(text); i < n; i++)
     {
-        if(text[i] >= 'a' )
+        if((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
+        {
+            
+        }
     }
 }
