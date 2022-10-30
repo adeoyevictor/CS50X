@@ -6,6 +6,7 @@
 int count_letters(string text);
 int count_words(string text);
 int count_sentences(string text);
+int calc_index(int letters, int words, int sentences);
 
 int main(void)
 {
@@ -13,9 +14,37 @@ int main(void)
     int letters = count_letters(text);
     int words = count_words(text);
     int sentences = count_sentences(text);
-
-    
+    int index = calc_index(letters, words, sentences);
 }
+
+
+
+
+
+
+
+
+int calc_index(int letters, int words, int sentences)
+{
+    float L = 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
