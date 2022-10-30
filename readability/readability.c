@@ -29,6 +29,33 @@ int main(void)
     printf("%i %i %i", letters, words, sentences);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int count_letters(string text)
 {
      int letters = 0;
@@ -39,4 +66,5 @@ int count_letters(string text)
             letters++;
         }
      }
+     return letters;
 }
