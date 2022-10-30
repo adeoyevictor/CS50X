@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
+int count_letters(string text);
+
 int main(void)
 {
-    int letters = 0;
     int words = 0;
     int sentences = 0;
     string text = get_string("Text: ");
@@ -25,4 +26,16 @@ int main(void)
     }
 
     printf("%i %i %i", letters, words, sentences);
+}
+
+int count_letters(string text)
+{
+     int letters = 0;
+     for (int i = 0, n = strlen(text); i < n; i++)
+     {
+        if ((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
+        {
+            letters++;
+        }
+     }
 }
