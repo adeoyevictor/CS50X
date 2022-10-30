@@ -10,9 +10,19 @@ int main(void)
     string text = get_string("Text: ");
     for (int i = 0, n = strlen(text); i < n; i++)
     {
-        if((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
+        if ((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
         {
-            
+            letters++;
+        }
+        else if (text[i] == ' ')
+        {
+            words++;
+        }
+        else if (text[i] == '.' || text[i] == '?' || text[i] == '!')
+        {
+            sentences++;
         }
     }
+
+    printf("%i %i %i", letters, words, sentences);
 }
