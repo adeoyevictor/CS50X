@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int count_letters(string text);
 
@@ -33,7 +34,7 @@ int count_letters(string text)
      int letters = 0;
      for (int i = 0, n = strlen(text); i < n; i++)
      {
-        if ((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
+        if (isalpha(text[i]))
         {
             letters++;
         }
