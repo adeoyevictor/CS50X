@@ -17,12 +17,18 @@ int main(void)
     int sentences = count_sentences(text);
     int index = calc_index(letters, words, sentences);
 
-    if(index >= 16)
+    if (index >= 16)
     {
-        printf("Grade 16+");
+        printf("Grade 16+\n");
     }
-
-    printf("Grade %i", index);
+    else if (index < 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    else
+    {
+        printf("Grade %i\n", index);
+    }
 }
 
 
