@@ -4,8 +4,8 @@ How do you know?: it was the fastest for the sorted data, and slowest for the ra
 
 sort2 uses: merge sort
 
-How do you know?: 
+How do you know?: it was the fastest for the random data, and running time was approximately same for random, sorted, and reversed data
 
 sort3 uses: selection
 
-How do you know?: TODO
+How do you know?: running time was approximately same for random, sorted, and reversed data and it was faster than bubble sort for the random data
