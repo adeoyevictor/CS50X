@@ -63,7 +63,7 @@ int main(int argc, string argv[])
         }
     }
     printf("ciphertext: ");
-    for (int i = 0, n = strlen(cypher); i < n; i++ )
+    for (int i = 0, n = strlen(plain); i < n; i++ )
     {
         printf("%c", cypher[i]);
     }
