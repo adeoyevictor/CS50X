@@ -1,10 +1,10 @@
 sort1 uses: bubble sort
 
-How do you know?: TODO
+How do you know?: it was the fastest for the sorted data, and slowest for the random data
 
 sort2 uses: merge sort
 
-How do you know?: TODO
+How do you know?: 
 
 sort3 uses: selection
 
