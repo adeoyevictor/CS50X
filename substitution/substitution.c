@@ -42,7 +42,10 @@ int main(int argc, string argv[])
     string plain = get_string("plaintext: ");
     string cypher = "";
 
-    
+    for (int i = 0, n = strlen(plain); i < n; i++ )
+    {
+        if(plain[i])
+    }
 
 
 }
