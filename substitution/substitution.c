@@ -14,5 +14,6 @@ int main(int argc, string argv[])
         printf("Length must be 26");
         return 1;
     }
-    
+    for
+
 }
