@@ -44,7 +44,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(plain); i < n; i++ )
     {
-        if(isalpha(plain[i])
+        if(isalpha(plain[i]))
         {
 
         }
