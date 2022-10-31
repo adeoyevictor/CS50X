@@ -49,6 +49,7 @@ int main(int argc, string argv[])
             if(islower(plain[i]))
             {
                 int index = plain[i] - 97;
+                 cypher += argv[0][index];
             }
             if(isupper(plain[i]))
             {
