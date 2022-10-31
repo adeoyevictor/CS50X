@@ -11,7 +11,8 @@ int main(int argc, string argv[])
     }
 
     if (strlen(argv[0]) != 26){
-        printf("");
+        printf("Length must be 26");
         return 1;
     }
+    
 }
