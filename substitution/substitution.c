@@ -49,12 +49,12 @@ int main(int argc, string argv[])
             if(islower(plain[i]))
             {
                 int index = plain[i] - 97;
-                cypher[i] = tolower(argv[1][index]);
+                cypher[i] = (char) tolower(argv[1][index]);
             }
             if(isupper(plain[i]))
             {
                 int index = plain[i] - 65;
-                cypher[i] = toupper(argv[1][index]);
+                cypher[i] = (char) toupper(argv[1][index]);
             }
         }
         else
