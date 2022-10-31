@@ -44,7 +44,14 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(plain); i < n; i++ )
     {
-        if(plain[i])
+        if(isalpha(plain[i])
+        {
+
+        }
+        else
+        {
+            cypher += plain[i];
+        }
     }
 
 
