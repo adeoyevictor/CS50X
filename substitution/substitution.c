@@ -40,7 +40,7 @@ int main(int argc, string argv[])
     }
 
     string plain = get_string("plaintext: ");
-    char cypher[strlen(plain)];
+    char cypher[strlen(argv[1])];
 
     for (int i = 0, n = strlen(plain); i < n; i++ )
     {
