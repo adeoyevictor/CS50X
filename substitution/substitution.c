@@ -10,13 +10,13 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
-    if (strlen(argv[0]) != 26){
-        printf("Length must be 26");
+    if (strlen(argv[1]) != 26){
+        printf("Length must be 26\n");
         return 1;
     }
-    for(int i = 0, n = strlen(argv[0]); i < n; i++)
+    for(int i = 0, n = strlen(argv[1]); i < n; i++)
     {
-        if(isalpha(argv[0][i]))
+        if(isalpha(argv[1][i]))
         {
 
         }
@@ -25,13 +25,13 @@ int main(int argc, string argv[])
             printf("Invalid Key\n");
             return 1;
         }
-        for(int j = 0, m = strlen(argv[0]); j < m; j++)
+        for(int j = 0, m = strlen(argv[1]); j < m; j++)
         {
             if(i == j)
             {
                 continue;
             }
-            if(argv[0][i] == argv[0][j])
+            if(argv[1][i] == argv[1][j])
             {
                 printf("Invalid Key\n");
                 return 1;
@@ -49,12 +49,12 @@ int main(int argc, string argv[])
             if(islower(plain[i]))
             {
                 int index = plain[i] - 97;
-                cypher += tolower(argv[0][index]);
+                cypher += tolower(argv[1][index]);
             }
             if(isupper(plain[i]))
             {
                 int index = plain[i] - 65;
-                cypher += toupper(argv[0][index]);
+                cypher += toupper(argv[1][index]);
             }
         }
         else
