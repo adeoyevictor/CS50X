@@ -15,7 +15,8 @@ int main(int argc, string argv[])
         printf("Length must be 26");
         return 1;
     }
-    for(int i = 0, n = strlen(argv[0]); i < n; i++)
+
+    for(int i = 0, n = strlen(argv[0]), char letter = ''; i < n; i++)
     {
         if(isalpha(argv[0][i]))
         {
@@ -23,7 +24,8 @@ int main(int argc, string argv[])
         }
         else
         {
-            
+            printf("Invalid Key\n");
+            return 1;
         }
     }
 
