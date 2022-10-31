@@ -10,12 +10,10 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
-
     if (strlen(argv[0]) != 26){
         printf("Length must be 26");
         return 1;
     }
-
     for(int i = 0, n = strlen(argv[0]); i < n; i++)
     {
         if(isalpha(argv[0][i]))
@@ -26,6 +24,18 @@ int main(int argc, string argv[])
         {
             printf("Invalid Key\n");
             return 1;
+        }
+        for(int j = 0, m = strlen(argv[0]); j < m; j++)
+        {
+            if(i == j)
+            {
+                continue;
+            }
+            if(argv[0][i] == argv[0][j])
+            {
+                printf("Invalid Key\n");
+                return 1;
+            }
         }
     }
 
