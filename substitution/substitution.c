@@ -46,7 +46,14 @@ int main(int argc, string argv[])
     {
         if(isalpha(plain[i]))
         {
+            if(islower(plain[i]))
+            {
+                int index = plain[i] - 97;
+            }
+            if(isupper(plain[i]))
+            {
 
+            }
         }
         else
         {
