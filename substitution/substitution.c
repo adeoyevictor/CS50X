@@ -40,7 +40,7 @@ int main(int argc, string argv[])
     }
 
     string plain = get_string("plaintext: ");
-    string cypher = "";
+    string cypher[strlen(argv[1])];
 
     for (int i = 0, n = strlen(plain); i < n; i++ )
     {
@@ -49,17 +49,17 @@ int main(int argc, string argv[])
             if(islower(plain[i]))
             {
                 int index = plain[i] - 97;
-                cypher += tolower(argv[1][index]);
+                cypher[i] = tolower(argv[1][index]);
             }
             if(isupper(plain[i]))
             {
                 int index = plain[i] - 65;
-                cypher += toupper(argv[1][index]);
+                cypher[i] = toupper(argv[1][index]);
             }
         }
         else
         {
-            cypher += plain[i];
+            cypher[i] = plain[i];
         }
     }
     printf("ciphertext: %s\n", cypher);
