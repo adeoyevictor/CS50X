@@ -62,5 +62,5 @@ int main(int argc, string argv[])
             cypher += plain[i];
         }
     }
-    printf("ciphertext: %s", cypher);
+    printf("ciphertext: %s\n", cypher);
 }
