@@ -40,7 +40,7 @@ int main(int argc, string argv[])
     }
 
     string plain = get_string("plaintext: ");
-    string cypher[strlen(argv[1])];
+    char cypher[strlen(argv[1])];
 
     for (int i = 0, n = strlen(plain); i < n; i++ )
     {
@@ -49,12 +49,12 @@ int main(int argc, string argv[])
             if(islower(plain[i]))
             {
                 int index = plain[i] - 97;
-                cypher[i] = (char) tolower(argv[1][index]);
+                cypher[i] = tolower(argv[1][index]);
             }
             if(isupper(plain[i]))
             {
                 int index = plain[i] - 65;
-                cypher[i] = (char) toupper(argv[1][index]);
+                cypher[i] = toupper(argv[1][index]);
             }
         }
         else
