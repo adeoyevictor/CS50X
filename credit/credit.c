@@ -39,19 +39,19 @@ int main(void)
                 notMultiplied += num;
             }
             break;
-         }
-         if (num < 100)
-         {
+        }
+        if (num < 100)
+        {
             secondNumber = num % 10;
-         }
+        }
         // CHECKING
         int digit = num % 10;
-        num = num/10;
+        num = num / 10;
 
         if (i % 2 == 1)
         {
             digit = digit * 2;
-            if(digit > 9)
+            if (digit > 9)
             {
                 digit = sumDigits(digit);
             }
@@ -70,12 +70,12 @@ int main(void)
     }
 
     int sum = multiplied + notMultiplied;
-    int firstTwoDigits = (firstNumber*10) + secondNumber;
-    if(sum % 10 == 0)
+    int firstTwoDigits = (firstNumber * 10) + secondNumber;
+    if (sum % 10 == 0)
     {
-        if(firstNumber == 4)
+        if (firstNumber == 4)
         {
-            if(noOfDigits==13||noOfDigits==16)
+            if (noOfDigits == 13 || noOfDigits == 16)
             {
                 printf("VISA\n");
             }
@@ -84,9 +84,9 @@ int main(void)
                 printf("INVALID\n");
             }
         }
-        else if (firstTwoDigits==34||firstTwoDigits==37)
+        else if (firstTwoDigits == 34 || firstTwoDigits == 37)
         {
-            if(noOfDigits==15)
+            if (noOfDigits == 15)
             {
                 printf("AMEX\n");
             }
@@ -95,7 +95,7 @@ int main(void)
                 printf("INVALID\n");
             }
         }
-        else if (firstTwoDigits == 51 || firstTwoDigits==52||firstTwoDigits==53||firstTwoDigits==54||firstTwoDigits==55)
+        else if (firstTwoDigits == 51 || firstTwoDigits == 52 || firstTwoDigits == 53 || firstTwoDigits == 54 || firstTwoDigits == 55)
         {
             if (noOfDigits == 16)
             {
