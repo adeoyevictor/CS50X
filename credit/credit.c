@@ -95,7 +95,7 @@ int main(void)
                 printf("INVALID\n");
             }
         }
-        else if (firstTwoDigits==51||firstTwoDigits==52||firstTwoDigits==53||firstTwoDigits==54||firstTwoDigits==55)
+        else if (firstTwoDigits == 51 || firstTwoDigits==52||firstTwoDigits==53||firstTwoDigits==54||firstTwoDigits==55)
         {
             if (noOfDigits == 16)
             {
