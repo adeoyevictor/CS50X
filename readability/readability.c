@@ -67,15 +67,15 @@ int calc_index(int letters, int words, int sentences)
 
 int count_sentences(string text)
 {
-     int sentences = 0;
-     for (int i = 0, n = strlen(text); i < n; i++)
-     {
+    int sentences = 0;
+    for (int i = 0, n = strlen(text); i < n; i++)
+    {
         if (text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
             sentences++;
         }
-     }
-     return sentences;
+    }
+    return sentences;
 }
 
 
@@ -91,15 +91,15 @@ int count_sentences(string text)
 
 int count_words(string text)
 {
-     int words = 1;
-     for (int i = 0, n = strlen(text); i < n; i++)
-     {
+    int words = 1;
+    for (int i = 0, n = strlen(text); i < n; i++)
+    {
         if (text[i] == ' ')
         {
             words++;
         }
-     }
-     return words;
+    }
+    return words;
 }
 
 
@@ -116,13 +116,13 @@ int count_words(string text)
 
 int count_letters(string text)
 {
-     int letters = 0;
-     for (int i = 0, n = strlen(text); i < n; i++)
-     {
+    int letters = 0;
+    for (int i = 0, n = strlen(text); i < n; i++)
+    {
         if (isalpha(text[i]))
         {
             letters++;
         }
-     }
-     return letters;
+    }
+    return letters;
 }
