@@ -11,4 +11,3 @@ def get_height():
 
 n = get_height()
 
-print(n)
