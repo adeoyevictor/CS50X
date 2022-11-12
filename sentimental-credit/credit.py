@@ -6,6 +6,8 @@ def main():
     noOfDigits = len(num)
     firstNumber = int(num[0:1])
     secondNumber = int(num[1,2])
+    firstTwoDigits = int[num[0:2]]
+    
     multiplied, notMultiplied, i = 0, 0, 0
     while True:
         if num < 10:
@@ -28,7 +30,6 @@ def main():
             notMultiplied += digit
         i += 1
     sum = multiplied + notMultiplied
-    firstTwoDigits = (firstNumber * 10) + secondNumber
     if sum % 10 == 0:
         if firstNumber == 4:
             if noOfDigits == 13 or noOfDigits == 16:
