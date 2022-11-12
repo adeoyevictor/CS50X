@@ -21,7 +21,7 @@ def draw(height):
         return
     draw(height - 1)
     # for i in range(height):
-    print(' ' * n - height, end='')
+    print(' ' * (n - height), end='')
     print('#' * height, end='')
     print(' ' * 2, end='')
     print('#' * height)
