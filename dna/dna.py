@@ -23,9 +23,10 @@ def main():
 
     file = open(sys.argv[2], "r")
     for line in file:
-        word = line.rstrip()
-        print(word)
+        dna += line.rstrip()
     file.close()
+
+    print(dna)
 
 
 
