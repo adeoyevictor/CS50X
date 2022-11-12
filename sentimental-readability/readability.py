@@ -2,7 +2,7 @@ import from cs50 get_string
 
 def main():
     text = get_string("Text: ")
-    letters = count_letter(text)
+    letters = count_letters(text)
     words = count_words(text)
     sentences = count_sentences(text)
     index = calc_index(letters, words, sentences)
@@ -15,7 +15,17 @@ def main():
 
 
 def count_letters():
-    
+
+def count_words(s):
+    words = 1
+    for i in s:
+        if i == ' ':
+            words += 1
+    return words
+
+
+def count_sentences():
+
 
 
 
