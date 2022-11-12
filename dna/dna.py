@@ -41,11 +41,11 @@ def main():
             if prop != 'name':
                 # print(prop)
                 vals += [databs[i][prop]]
-                if vals == longestSeq:
-                    print(databs[i]['name'])
-                    break
+                # if vals == longestSeq:
+                    # print(databs[i]['name'])
+                    # break
 
-    print(vals)
+    # print(vals)
     return
 
 
