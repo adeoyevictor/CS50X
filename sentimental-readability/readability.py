@@ -19,7 +19,7 @@ def main():
 def count_letters(s):
     letters = 0
     for i in s:
-        if i.:
+        if i.isalpha():
             letters += 1
     return letters
 
