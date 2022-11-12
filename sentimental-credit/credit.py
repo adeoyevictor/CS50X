@@ -8,7 +8,7 @@ def main():
     secondNumber = int(num[1:2])
     firstTwoDigits = int(num[0:2])
     num = int(num)
-    
+
     multiplied, notMultiplied, i = 0, 0, 0
     while True:
         if num < 10:
