@@ -17,7 +17,7 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
     with open(sys.argv[1], "r") as file:
-        reader = csv.DictReader(file) 
+        reader = csv.DictReader(file)
         for row in reader:
             teams += [{
                 "team": row["team"],
@@ -58,6 +58,7 @@ def simulate_round(teams):
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
     # TODO
+    
 
 
 if __name__ == "__main__":
