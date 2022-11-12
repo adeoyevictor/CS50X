@@ -45,8 +45,9 @@ def main():
         if vals == longestSeq:
             print(databs[i]['name'])
             break
+            sys.exit(0)
 
-    # print(vals)
+    print('No Match')
     return
 
 
