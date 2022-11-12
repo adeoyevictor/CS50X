@@ -18,7 +18,7 @@ def calc_index(letters, words, sentences):
     L = (letters * 100) / words
     S = (sentences * 100) / words
     index = 0.0588 * L - 0.296 * S - 15.8
-    return index
+    return round(index)
 
 def count_letters(s):
     letters = 0
