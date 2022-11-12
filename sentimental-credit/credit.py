@@ -2,6 +2,7 @@ import sys
 import re
 from cs50 import get_int
 def main():
+
     num = input("Number: ")
     noOfDigits = len(num)
     firstNumber = int(num[0:1])
