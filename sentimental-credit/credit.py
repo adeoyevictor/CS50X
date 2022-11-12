@@ -1,9 +1,9 @@
 import sys
 import re
-from cs50 import get_int
+from cs50 import get_string
 def main():
 
-    num = input("Number: ")
+    num = get_string("Number: ")
     noOfDigits = len(num)
     firstNumber = int(num[0:1])
     secondNumber = int(num[1:2])
