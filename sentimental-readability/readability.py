@@ -1,4 +1,6 @@
 import from cs50 get_string
+import re
+
 
 def main():
     text = get_string("Text: ")
@@ -14,7 +16,12 @@ def main():
         printf(f"Grade {index}")
 
 
-def count_letters():
+def count_letters(s):
+    letters = 0
+    for i in s:
+        if i.:
+            letters += 1
+    return letters
 
 def count_words(s):
     words = 1
