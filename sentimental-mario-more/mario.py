@@ -1,9 +1,9 @@
 # TODO
 from cs50 import get_int
 
+n = get_height()
 
 def main():
-    n = get_height()
     draw(n)
 
 def get_height():
