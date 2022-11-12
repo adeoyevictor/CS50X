@@ -47,9 +47,7 @@ def main():
 
     for i in range(len(databs)):
         for prop in databs[i]:
-            if prop == 'name':
-                # continue
-            else:
+            if prop != 'name':
                 for j in range(len(longestSeq)):
                     if databs[i][prop] == longestSeq[j]:
                         print(databs[i]["name"])
