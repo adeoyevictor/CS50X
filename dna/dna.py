@@ -13,7 +13,7 @@ def main():
     databs = dict()
     file = open(sys.argv[1], "r")
     for line in file:
-        print(line[0])
+        print(line)
 
     file.close()
 
