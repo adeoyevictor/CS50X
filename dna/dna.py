@@ -39,8 +39,11 @@ def main():
     # TODO: Check database for matching profiles
     for i in range(len(databs)):
         for prop in databs[i]:
-            if databs[i][prop]:
-                print()
+            if prop == 'name':
+                continue
+            print(prop)
+            if databs[i][prop] == longestSeq[i]:
+                print('', end='')
 
 
     return
