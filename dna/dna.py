@@ -31,7 +31,10 @@ def main():
         dna += line.rstrip()
     file.close()
     # TODO: Find longest match of each STR in DNA sequence
-    for
+    longestSeq = []
+    for i in range(1, len(rows)):
+        longestSeq += []
+    print(longestSeq)
 
     # TODO: Check database for matching profiles
 
