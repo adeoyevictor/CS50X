@@ -21,12 +21,12 @@ def main():
                 obj[row1[i]] = row[i]
             databs.append(obj)
 
-    with open(sys.argv[2], "r") as file:
-        reader = csv.reader(file)
-        for line in reader:
-            print(line)
+    file = open(sys.argv[2], "r")
+    for line in file:
+        word = line.rstrip()
+        print(word)
+    file.close()
 
-    print(dna)
 
 
     # TODO: Read DNA sequence file into a variable
