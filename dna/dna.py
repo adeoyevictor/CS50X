@@ -12,11 +12,10 @@ def main():
     # TODO: Read database file into a variable
     databs = dict()
     with open(sys.argv[1], "r") as file:
-    reader = csv.reader(file)
-    next(reader)
-    for row in reader:
-         = row[1]
-        houses[house] += 1
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            print(row)
 
     # TODO: Read DNA sequence file into a variable
 
