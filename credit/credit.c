@@ -8,6 +8,7 @@ int sumDigits(int n)
     return lastNumber + firstNumber;
 }
 //PASS
+
 int main(void)
 {
     long num = get_long("Number: ");
