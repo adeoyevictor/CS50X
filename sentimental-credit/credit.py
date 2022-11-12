@@ -7,6 +7,8 @@ def main():
     print(noOfDigits, multiplied, notMultiplied, firstNumber, secondNumber, i)
 
 
+
+
 def sumDigits(n):
     return ( n % 10) + ( n / 10)
 
