@@ -22,7 +22,6 @@ def main():
                 obj[rows[i]] = row[i]
             databs.append(obj)
 
-
     # TODO: Read DNA sequence file into a variable
     file = open(sys.argv[2], "r")
     for line in file:
@@ -44,7 +43,6 @@ def main():
         if vals == longestSeq:
             print(databs[i]['name'])
             sys.exit(0)
-
 
     print('No Match')
     return
