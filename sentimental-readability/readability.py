@@ -14,11 +14,13 @@ def main():
     else:
         print(f"Grade {index}")
 
+
 def calc_index(letters, words, sentences):
     L = (letters * 100) / words
     S = (sentences * 100) / words
     index = 0.0588 * L - 0.296 * S - 15.8
     return round(index)
+
 
 def count_letters(s):
     letters = 0
@@ -26,6 +28,7 @@ def count_letters(s):
         if i.isalpha():
             letters += 1
     return letters
+    
 
 def count_words(s):
     words = 1
