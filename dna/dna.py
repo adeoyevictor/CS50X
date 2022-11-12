@@ -15,7 +15,7 @@ def main():
         reader = csv.reader(file)
         next(reader)
         for row in reader:
-            print(row[0])
+            databs.append({})
 
     # TODO: Read DNA sequence file into a variable
 
