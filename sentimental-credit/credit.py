@@ -3,9 +3,10 @@ import re
 from cs50 import get_int
 def main():
     num = input("Number: ")
-    # noOfDigits = len(num)
-
-    multiplied, notMultiplied, firstNumber, secondNumber, i = 0, 0, 0, 0, 0, 0
+    noOfDigits = len(num)
+    firstNumber = int(num[0:1])
+    secondNumber = int(num[1,2])
+    multiplied, notMultiplied, i = 0, 0, 0
     while True:
         if num < 10:
             firstNumber = num
