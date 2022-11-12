@@ -1,6 +1,8 @@
 import sys
 import re
 from cs50 import get_int
+
+
 def main():
 
     num = get_int("Number: ")
@@ -25,7 +27,7 @@ def main():
         digit = num % 10
         num = num // 10
         if i % 2 == 1:
-            digit = digit *2
+            digit = digit * 2
             if digit > 9:
                 digit = sumDigits(digit)
             multiplied += digit
@@ -53,6 +55,10 @@ def main():
             print('INVALID')
     else:
         print('INVALID')
+
+
 def sumDigits(n):
-    return ( n % 10) + ( n // 10)
+    return (n % 10) + (n // 10)
+
+    
 main()
