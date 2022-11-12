@@ -10,6 +10,7 @@ def main():
         sys.exit(1)
 
     # TODO: Read database file into a variable
+    databs = dict()
     file = open(argv[1], "r")
     for line in file:
         word = line.rstrip()
