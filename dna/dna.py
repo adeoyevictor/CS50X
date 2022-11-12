@@ -14,8 +14,9 @@ def main():
 
     with open(sys.argv[1], "r") as file:
         reader = csv.DictReader(file)
-        row1 = next(reader)
-        print(row1)
+        for row in reader:
+            row1 = next(reader)
+            print(row1)
         # for row in reader:
         #     databs += [{
         #         "name": row["name"],
