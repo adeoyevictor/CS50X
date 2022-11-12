@@ -15,7 +15,7 @@ def main():
     reader = csv.reader(file)
     next(reader)
     for row in reader:
-        house = row[1]
+         = row[1]
         houses[house] += 1
 
     # TODO: Read DNA sequence file into a variable
