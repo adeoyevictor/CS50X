@@ -15,14 +15,11 @@ def main():
     with open(sys.argv[1], "r") as file:
         reader = csv.reader(file)
         row1 = next(reader)
-        print(len(row1))
         for row in reader:
             obj = {}
             for i in range(len(row1)):
-                obj.add()
-
-
-    print(databs)
+                obj[row1[i]] = row[i]
+            databs.append(obj)
 
 
     # TODO: Read DNA sequence file into a variable
