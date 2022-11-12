@@ -15,10 +15,12 @@ def main():
     with open(sys.argv[1], "r") as file:
         reader = csv.reader(file)
         row1 = next(reader)
+        print(len(row1))
         for row in reader:
-            databs += [{
-                row1[0]: row[0]
-            }]
+            obj = {}
+            for i in range(len(row1)):
+                obj.add()
+
 
     print(databs)
 
