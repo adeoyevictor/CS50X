@@ -20,6 +20,11 @@ def main():
             secondNumber = num % 10
         digit = num % 10
         num = num // 10
+        if i % 2 == 1:
+            digit = digit *2
+            if digit > 9:
+                digit = sumDigits(digit)
+            multilplied += 
 
 
 
