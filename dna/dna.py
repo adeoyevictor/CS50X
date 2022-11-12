@@ -10,7 +10,8 @@ def main():
         sys.exit(1)
 
     # TODO: Read database file into a variable
-    databs = dict()
+    databs = []
+    
     with open(sys.argv[1], "r") as file:
         reader = csv.reader(file)
         # next(reader)
