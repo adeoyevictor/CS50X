@@ -7,7 +7,6 @@ def main():
 
     multiplied, notMultiplied, firstNumber, secondNumber, i = 0, 0, 0, 0, 0, 0
     while True:
-        noOfDigits += 1
         if num < 10:
             firstNumber = num
             if i % 2 == 1:
