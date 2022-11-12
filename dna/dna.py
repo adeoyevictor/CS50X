@@ -35,9 +35,13 @@ def main():
     for i in range(1, len(rows)):
         lngest = longest_match(dna, rows[i])
         longestSeq += [lngest]
-    print(longestSeq)
+    print(databs)
 
     # TODO: Check database for matching profiles
+    for i in range(len(databs)):
+        for prop in databs[i]:
+            print(prop)
+
 
     return
 
