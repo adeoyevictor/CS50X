@@ -43,7 +43,7 @@ def main():
                 continue
             print(prop)
             if databs[i][prop] == longestSeq[i]:
-                print('', end='')
+                print()
 
 
     return
