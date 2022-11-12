@@ -28,6 +28,10 @@ def main():
         elif i % 2 == 0:
             notMultiplied += digit
         i += 1
+    sum = multiplied + notMultiplied
+    firstTwoDigits = (firstNumber * 10) + secondNumber
+
+    
 
 
 
