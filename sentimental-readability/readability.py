@@ -6,3 +6,35 @@ def main():
     words = count_words(text)
     sentences = count_sentences(text)
     index = calc_index(letters, words, sentences)
+    if index >= 16:
+        print("Grade 16+")
+    elif index < 1:
+        print("Before Grade 1")
+    else:
+        printf(f"Grade {index}")
+
+
+def count_letters():
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main()
