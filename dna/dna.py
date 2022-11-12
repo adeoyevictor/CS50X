@@ -41,10 +41,11 @@ def main():
             if prop != 'name':
                 # print(prop)
                 vals += [databs[i][prop]]
-    if vals == longestSeq:
-        print(databs[i]['name'])
-    else:
-        print('No Match')
+                if vals == longestSeq:
+                    print(databs[i]['name'])
+                    break
+
+    print(vals)
     return
 
 
