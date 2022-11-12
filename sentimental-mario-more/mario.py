@@ -10,16 +10,3 @@ for i in range(1, height + 1):
     print('#' * i, end='')
     print(' ' * 2, end='')
     print('#' * i)
-
-
-
-
-
-
-
-
-
-
-
-
-
