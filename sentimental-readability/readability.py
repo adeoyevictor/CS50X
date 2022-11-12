@@ -1,5 +1,4 @@
-import from cs50 get_string
-import re
+from cs50 import get_string
 
 
 def main():
@@ -13,7 +12,7 @@ def main():
     elif index < 1:
         print("Before Grade 1")
     else:
-        printf(f"Grade {index}")
+        print(f"Grade {index}")
 
 
 def count_letters(s):
