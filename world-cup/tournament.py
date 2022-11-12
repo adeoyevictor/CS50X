@@ -24,7 +24,6 @@ def main():
                 "rating": int(row["rating"])
             }]
 
-
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
     for i in range(N):
@@ -70,11 +69,6 @@ def simulate_tournament(teams):
         teamList = simulate_round(teamList)
         n = len(teamList)
     return teamList[0]["team"]
-
-
-
-
-
 
 
 if __name__ == "__main__":
