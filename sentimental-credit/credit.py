@@ -31,12 +31,12 @@ def main():
     sum = multiplied + notMultiplied
     firstTwoDigits = (firstNumber * 10) + secondNumber
 
-    
-
-
-
-
-
+    if sum % 10 == 0:
+        if firstNumer == 4:
+            if noOfDigits == 13 or noOfDigits == 16:
+                print('VISA')
+            else:
+                print('INVALID')
 
 def sumDigits(n):
     return ( n % 10) + ( n // 10)
