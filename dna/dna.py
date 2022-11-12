@@ -22,16 +22,16 @@ def main():
                 obj[rows[i]] = row[i]
             databs.append(obj)
 
+
+
+
+    # TODO: Read DNA sequence file into a variable
     file = open(sys.argv[2], "r")
     for line in file:
         dna += line.rstrip()
     file.close()
-    print(rows)
-
-
-    # TODO: Read DNA sequence file into a variable
-
     # TODO: Find longest match of each STR in DNA sequence
+    for
 
     # TODO: Check database for matching profiles
 
