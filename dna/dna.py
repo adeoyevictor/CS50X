@@ -11,7 +11,7 @@ def main():
 
     # TODO: Read database file into a variable
     databs = []
-
+    dna = ''
     with open(sys.argv[1], "r") as file:
         reader = csv.reader(file)
         row1 = next(reader)
@@ -20,6 +20,9 @@ def main():
             for i in range(len(row1)):
                 obj[row1[i]] = row[i]
             databs.append(obj)
+
+    with open(sys.argv[2], "r") as file:
+        reader = csv.reader(file)
 
 
     # TODO: Read DNA sequence file into a variable
