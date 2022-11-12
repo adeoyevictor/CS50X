@@ -13,8 +13,8 @@ def main():
     databs = dict()
     file = open(argv[1], "r")
     for line in file:
-        word = line.rstrip()
-        words.add(word)
+        
+
     file.close()
 
     # TODO: Read DNA sequence file into a variable
