@@ -17,7 +17,11 @@ def get_height():
 
 def draw(height):
     # draw(height - 1)
-    for i in range(height):
-        print(""*)
+    # for i in range(height):
+    print(' ' * 0, end='')
+    print('#' * height, end='')
+    print(' ' * 2, end='')
+    print('#' * height)
 
 
+main()
