@@ -1,7 +1,11 @@
 # TODO
 from cs50 import get_int
 
-# height = None
+
+def main():
+    n = get_height()
+    draw(n)
+
 def get_height():
     while True:
         height = get_int("Height: ")
@@ -9,5 +13,10 @@ def get_height():
             break
     return height
 
-n = get_height()
+
+
+def draw(height):
+    # draw(height - 1)
+    print(""*)
+
 
