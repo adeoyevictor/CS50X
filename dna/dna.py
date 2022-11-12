@@ -37,6 +37,14 @@ def main():
         longestSeq += [lngest]
 
     # TODO: Check database for matching profiles
+
+
+
+
+
+
+
+
     for i in range(len(databs)):
         for prop in databs[i]:
             if prop == 'name':
@@ -45,6 +53,11 @@ def main():
                 if databs[i][prop] == longestSeq[j]:
                     print(databs[i]["name"])
                     sys.exit(0)
+
+
+
+
+
 
 
     return
