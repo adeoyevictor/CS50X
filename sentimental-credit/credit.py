@@ -26,6 +26,8 @@ def main():
                 digit = sumDigits(digit)
             multiplied += digit
         elif i % 2 == 0:
+            notMultiplied += digit
+        i += 1
 
 
 
