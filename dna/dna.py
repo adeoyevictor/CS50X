@@ -23,8 +23,6 @@ def main():
             databs.append(obj)
 
 
-
-
     # TODO: Read DNA sequence file into a variable
     file = open(sys.argv[2], "r")
     for line in file:
@@ -37,33 +35,16 @@ def main():
         longestSeq += [lngest]
 
     # TODO: Check database for matching profiles
-
-
-
-
-
-
-
-
     for i in range(len(databs)):
         vals = []
         for prop in databs[i]:
             if prop != 'name':
                 # print(prop)
                 vals += [databs[i][prop]]
-        print(vals)
-        
-                # for j in range(len(longestSeq)):
-                #     if databs[i][prop] == longestSeq[j]:
-                #         print(databs[i]["name"])
-                #         sys.exit(0)
-
-
-
-
-
-
-
+    if vals == longestSeq:
+        print(databs[i]['name'])
+    else:
+        print('No Match')
     return
 
 
