@@ -24,27 +24,12 @@ def count_words(s):
     return words
 
 
-def count_sentences():
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def count_sentences(s):
+    sentences = 0
+    for i in s:
+        if (i == '.' or i == '?' or i == '!'):
+            sentences += 1
+    return sentences
 
 
 main()
