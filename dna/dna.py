@@ -33,15 +33,15 @@ def main():
     for i in range(1, len(rows)):
         lngest = longest_match(dna, rows[i])
         longestSeq += [lngest]
-
+    # print(longestSeq)
     # TODO: Check database for matching profiles
     for i in range(len(databs)):
         vals = []
         for prop in databs[i]:
             if prop != 'name':
                 # print(prop)
-                vals += [databs[i][prop]]
-        print(vals)
+                vals += [int(databs[i][prop])]
+        # print(vals)
         if vals == longestSeq:
             print(databs[i]['name'])
             break
