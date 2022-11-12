@@ -61,7 +61,8 @@ def simulate_tournament(teams):
     # if len(teams) == 1:
         # return teams[0]["team"]
 
-    
+    for i in range(0, len(teams), 2):
+        
 
 
 
