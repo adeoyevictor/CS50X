@@ -11,9 +11,9 @@ def main():
 
     # TODO: Read database file into a variable
     databs = dict()
-    file = open(argv[1], "r")
+    file = open(sys.argv[1], "r")
     for line in file:
-        
+        print(line[0])
 
     file.close()
 
