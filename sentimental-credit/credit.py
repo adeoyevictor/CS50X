@@ -9,7 +9,6 @@ def main():
     multiplied, notMultiplied, i = 0, 0, 0
     while True:
         if num < 10:
-            firstNumber = num
             if i % 2 == 1:
                 num = num * 2
                 if num > 9:
@@ -18,8 +17,6 @@ def main():
             elif i % 2 == 0:
                 notMultiplied += num
             break
-        if num < 100:
-            secondNumber = num % 10
         digit = num % 10
         num = num // 10
         if i % 2 == 1:
