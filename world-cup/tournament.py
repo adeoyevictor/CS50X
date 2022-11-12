@@ -21,7 +21,7 @@ def main():
         for row in reader:
             teams += [{
                 "team": row["team"],
-                "rating": row["rating"]
+                "rating": int(row["rating"])
             }]
 
 
