@@ -25,7 +25,9 @@ def main():
         reader = csv.reader(file)
         for line in reader:
             val = line.rstrip()
-            dna = 
+            dna += val
+
+    print(dna)
 
 
     # TODO: Read DNA sequence file into a variable
