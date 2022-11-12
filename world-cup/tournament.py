@@ -20,7 +20,7 @@ def main():
         reader = csv.DictReader(file) #allows you to use the keys
         for row in reader:
             team = {
-                team: row["team"]
+                team: row["team"],
                 rating: row["rating"]
             }
             house = row["House"]
