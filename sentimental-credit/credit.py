@@ -24,7 +24,9 @@ def main():
             digit = digit *2
             if digit > 9:
                 digit = sumDigits(digit)
-            multilplied += 
+            multilplied += digit
+        elif i % 2 == 0:
+            
 
 
 
