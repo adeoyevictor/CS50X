@@ -1,13 +1,8 @@
-# TODO
+import sys
+import re
 from cs50 import get_int
-
 def main():
     num = get_int("Number: ")
-
-
-
-
-    
     noOfDigits, multiplied, notMultiplied, firstNumber, secondNumber, i = 0, 0, 0, 0, 0, 0
     while True:
         noOfDigits += 1
@@ -35,7 +30,6 @@ def main():
         i += 1
     sum = multiplied + notMultiplied
     firstTwoDigits = (firstNumber * 10) + secondNumber
-
     if sum % 10 == 0:
         if firstNumber == 4:
             if noOfDigits == 13 or noOfDigits == 16:
@@ -56,9 +50,6 @@ def main():
             print('INVALID')
     else:
         print('INVALID')
-
-
 def sumDigits(n):
     return ( n % 10) + ( n // 10)
-
 main()
