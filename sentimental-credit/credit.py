@@ -32,11 +32,26 @@ def main():
     firstTwoDigits = (firstNumber * 10) + secondNumber
 
     if sum % 10 == 0:
-        if firstNumer == 4:
+        if firstNumber == 4:
             if noOfDigits == 13 or noOfDigits == 16:
                 print('VISA')
             else:
                 print('INVALID')
+        elif firstTwoDigits == 34 or firstTwoDigits == 37:
+            if noOfDigits == 15:
+                print('AMEX')
+            else:
+                print('INVALID')
+        elif firstTwoDigits == 51 or firstTwoDigits == 52 or firstTwoDigits == 53 or firstTwoDigits == 54 or firstTwoDigits == 55:
+            if noOfDigits == 16:
+                print('MASTERCARD')
+            else:
+                print('INVALID')
+        else:
+            print('INVALID')
+    else:
+        print('INVALID')
+
 
 def sumDigits(n):
     return ( n % 10) + ( n // 10)
