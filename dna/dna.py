@@ -12,22 +12,21 @@ def main():
     # TODO: Read database file into a variable
     databs = []
     dna = ''
+    rows = []
     with open(sys.argv[1], "r") as file:
         reader = csv.reader(file)
-        row1 = next(reader)
+        rows = next(reader)
         for row in reader:
             obj = {}
-            for i in range(len(row1)):
-                obj[row1[i]] = row[i]
+            for i in range(len(rows)):
+                obj[rows[i]] = row[i]
             databs.append(obj)
 
     file = open(sys.argv[2], "r")
     for line in file:
         dna += line.rstrip()
     file.close()
-
-    print(dna)
-
+    print(rows)
 
 
     # TODO: Read DNA sequence file into a variable
