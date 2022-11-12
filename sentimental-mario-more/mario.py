@@ -1,8 +1,6 @@
 # TODO
 from cs50 import get_int
 
-n = None
-
 def main():
     n = get_height()
     draw(n)
@@ -21,7 +19,7 @@ def draw(height):
         return
     draw(height - 1)
     # for i in range(height):
-    print(' ' * (n - height), end='')
+    print(' ' * (height), end='')
     print('#' * height, end='')
     print(' ' * 2, end='')
     print('#' * height)
