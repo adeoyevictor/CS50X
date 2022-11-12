@@ -16,7 +16,7 @@ def main():
         reader = csv.DictReader(file)
         for row in reader:
             databs += [{
-                # "team": row["team"],
+                "name": row["name"],
             }]
     print(databs)
 
