@@ -139,6 +139,7 @@ void add_pairs(void)
             }
             else if (preferences[i][j] > preferences[j][i])
             {
+                
                 pair_count++
             }
             else
