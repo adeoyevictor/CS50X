@@ -2,26 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-bool cycle(int end, int cycle_start)
-{
-    // Return True if there is a cycle created (recursion base case)
-    if (end == cycle_start)
-    {
-        return true;
-    }
-    // Loop through candidates
-    for (int i = 0; i < candidate_count; i++)
-    {
-        if(locked[end][i]])
-        {
-            if(cycle(i, cycle_start))
-            {
-                return true;
-            }
-        }
-    }
-    return false;
-}
+bool cycle(int end, int cycle_start);
 // Max number of candidates
 #define MAX 9
 
@@ -229,4 +210,26 @@ void print_winner(void)
 
     }
     return;
+}
+
+
+bool cycle(int end, int cycle_start)
+{
+    // Return True if there is a cycle created (recursion base case)
+    if (end == cycle_start)
+    {
+        return true;
+    }
+    // Loop through candidates
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if(locked[end][i]])
+        {
+            if(cycle(i, cycle_start))
+            {
+                return true;
+            }
+        }
+    }
+    return false;
 }
