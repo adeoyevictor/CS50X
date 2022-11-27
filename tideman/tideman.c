@@ -185,10 +185,11 @@ void lock_pairs(void)
     // TODO
     for (int i = 0; i < pair_count; i++)
     {
-        for (int j = 0; i < pair_count; j++)
-        {
+        locked[]
+        // for (int j = 0; i < pair_count; j++)
+        // {
 
-        }
+        // }
     }
     return;
 }
