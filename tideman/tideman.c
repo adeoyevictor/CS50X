@@ -223,7 +223,7 @@ bool cycle(int end, int cycle_start)
     // Loop through candidates
     for (int i = 0; i < candidate_count; i++)
     {
-        if(locked[end][i]])
+        if(locked[end][i])
         {
             if(cycle(i, cycle_start))
             {
