@@ -169,6 +169,7 @@ void sort_pairs(void)
             }
         }
         pair temp = pairs[i];
+        
         pairs[i] = largest;
 
     }
