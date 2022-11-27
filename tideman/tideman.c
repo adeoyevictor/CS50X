@@ -121,14 +121,14 @@ int main(int argc, string argv[])
 bool vote(int rank, string name, int ranks[])
 {
     // TODO
-    for (int i = 0; i < candidate_count; i++)
-    {
-        if (strcmp(name, candidates[i]) == 0)
-        {
-            ranks[rank] = i;
-            return true;
-        }
-    }
+   for(int c = 0; c < candidate_count; c++)
+  {
+     if(strcmp(candidates[c], name)==0)
+     {
+       ranks[rank]=c;
+       return true;
+      }
+  }
     return false;
 }
 
