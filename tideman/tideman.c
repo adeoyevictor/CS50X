@@ -168,9 +168,12 @@ void sort_pairs(void)
                 largest = j;
             }
         }
-
-        pair temp = pairs[i];
-        pairs[i] = largest;
+        if (lagest !== i)
+        {
+            pair temp = pairs[i];
+            pairs[i] = pairs[largest];
+            pairs[largest] = temp;
+        }
 
     }
     return;
