@@ -160,15 +160,15 @@ void sort_pairs(void)
     // TODO
     for (int i = 0; i < pair_count; i++)
     {
-        pair largest = pairs[i];
+        int largest = i;
         for (int j = i + 1; j < pair_count; j++)
         {
             if (preferences[pairs[j].winner][pairs[j].loser] > preferences[pairs[i].winner][pairs[i].loser])
             {
-                largest = pairs[j];
+                largest = j;
             }
         }
-        
+
         pair temp = pairs[i];
         pairs[i] = largest;
 
