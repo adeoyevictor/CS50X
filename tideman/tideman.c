@@ -199,6 +199,14 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
     // TODO
+    for (int i = 0; i < pair_count; i++)
+    {
+        //If cycle returns false, lock the pair
+        if(!cycle(pairs[i].loser, pairs[i].winner))
+        {
+            locked[pairs[i].winner][pairs[i].loser] = true;
+        }
+    }
     return;
 }
 
@@ -206,5 +214,21 @@ void lock_pairs(void)
 void print_winner(void)
 {
     // TODO
+ for(int i = 0; i < candidate_count; i++)
+    {
+        int falseValues = 0;
+        for(int j = 0; j < candidate_count; j++)
+        {
+            if(locked[j][i] == false)
+            {
+                falseValues++;
+                if(falseValues == candidate_count)
+                {
+                    printf("%s\n",candidates[i]);
+                }
+            }
+        }
+
+    }
     return;
 }
