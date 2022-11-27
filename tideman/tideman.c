@@ -178,17 +178,17 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     // TODO
-    for (int i = pair_count - 1; i >= 0; i--)
+   for(int i = pair_count - 1; i >= 0; i--)
     {
-        for (int j = 0; j <= i; j++)
+        for(int j = 0; j <= i; j++)
         {
-            if ((preferences[pairs[j].winner][pairs[j].loser])
-                <
-                (preferences[pairs[j + 1].winner][pairs[j + 1].loser]))
+            if((preferences[pairs[j].winner][pairs[j].loser])
+               <
+               (preferences[pairs[j + 1].winner][pairs[j+1].loser]))
             {
                 pair temp = pairs[j];
-                pairs[j] = pairs[j + 1];
-                pairs[j + 1] = temp;
+                pairs[j] = pairs[j+1];
+                pairs[j+1] = temp;
             }
         }
     }
@@ -199,7 +199,7 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
     // TODO
-    for (int i = 0; i < pair_count; i++)
+   for (int i = 0; i < pair_count; i++)
     {
         //If cycle returns false, lock the pair
         if(!cycle(pairs[i].loser, pairs[i].winner))
@@ -214,7 +214,7 @@ void lock_pairs(void)
 void print_winner(void)
 {
     // TODO
- for(int i = 0; i < candidate_count; i++)
+  for(int i = 0; i < candidate_count; i++)
     {
         int falseValues = 0;
         for(int j = 0; j < candidate_count; j++)
