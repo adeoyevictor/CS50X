@@ -201,7 +201,11 @@ bool cycle(int loser, int winner)
     {
         return true;
     }
-    
+
+    for (int i = 0; i < candidate_count; i++)
+    {
+        
+    }
 }
 // Print the winner of the election
 void print_winner(void)
