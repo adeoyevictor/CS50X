@@ -204,8 +204,13 @@ bool cycle(int loser, int winner)
 
     for (int i = 0; i < candidate_count; i++)
     {
-        
+        if(locked[loser][i])
+        {
+            
+        }
     }
+
+    return false
 }
 // Print the winner of the election
 void print_winner(void)
