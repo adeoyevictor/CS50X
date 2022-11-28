@@ -219,5 +219,12 @@ bool cycle(int loser, int winner)
 void print_winner(void)
 {
     // TODO
+    for (int i = 0; i < candidate_count; i++)
+    {
+        for (int j = 0; j < candidate_count; j++)
+        {
+            
+        }
+    }
     return;
 }
