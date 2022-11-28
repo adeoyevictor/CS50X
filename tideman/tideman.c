@@ -103,7 +103,7 @@ bool vote(int rank, string name, int ranks[])
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        if(strcmp(name, candidates[i]) == 0)
+        if (strcmp(name, candidates[i]) == 0)
         {
             ranks[rank] = i;
             return true;
@@ -204,12 +204,12 @@ bool cycle(int loser, int winner)
 
     for (int i = 0; i < candidate_count; i++)
     {
-        if(locked[loser][i])
+        if (locked[loser][i])
         {
-           if (cycle(i, winner))
-           {
-            return true;
-           }
+            if (cycle(i, winner))
+            {
+                return true;
+            }
         }
     }
 
