@@ -221,12 +221,17 @@ void print_winner(void)
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
+        int falses = 0;
         for (int j = 0; j < candidate_count; j++)
         {
             if (!locked[j][i])
             {
-                
+                falses++;
             }
+        }
+        if (falses == candidate_count)
+        {
+            printf("%s\n", candidates[i]);
         }
     }
     return;
