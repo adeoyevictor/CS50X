@@ -26,6 +26,7 @@ int pair_count;
 int candidate_count;
 
 // Function prototypes
+bool cycle(int loser, int winner);
 bool vote(int rank, string name, int ranks[]);
 void record_preferences(int ranks[]);
 void add_pairs(void);
@@ -193,6 +194,14 @@ void lock_pairs(void)
     return;
 }
 
+
+bool cycle(int loser, int winner)
+{
+    if (loser == winner)
+    {
+        
+    }
+}
 // Print the winner of the election
 void print_winner(void)
 {
