@@ -206,11 +206,14 @@ bool cycle(int loser, int winner)
     {
         if(locked[loser][i])
         {
-            
+           if (false)
+           {
+            return true;
+           }
         }
     }
 
-    return false
+    return false;
 }
 // Print the winner of the election
 void print_winner(void)
