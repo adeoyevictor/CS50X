@@ -199,8 +199,9 @@ bool cycle(int loser, int winner)
 {
     if (loser == winner)
     {
-        
+        return true;
     }
+    
 }
 // Print the winner of the election
 void print_winner(void)
