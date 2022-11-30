@@ -43,8 +43,10 @@ int main(int argc, char *argv[])
 
     int16_t buffer;
 
-    fread(&buffer, sizeof(int16_t), 1, input);
-    fwrite(&buffer, sizeof(int16_t), 1 , output);
+    while(fread(&buffer, sizeof(int16_t), 1, input))
+    {
+
+    }
 
 
 
