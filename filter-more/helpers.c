@@ -128,7 +128,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         {
             // GX Blue
             int gx_blue = 0;
-            
+            gx_blue
         }
     }
     return;
