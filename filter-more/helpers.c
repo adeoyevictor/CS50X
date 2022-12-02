@@ -187,6 +187,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
                 gx_red += (image[i][j - 1].rgbtRed * -2) + (image[i][j + 1].rgbtRed * 2) + (image[i - 1][j - 1].rgbtRed * -1) + (image[i + 1][j - 1].rgbtRed * -1) + (image[i - 1][j + 1].rgbtRed * 1) + (image[i + 1][j + 1].rgbtRed * 1);
             }
+
+            
         }
     }
     return;
