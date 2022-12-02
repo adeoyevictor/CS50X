@@ -52,23 +52,39 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 a = 0;
                 b = i + 1;
             }
-            if (i == height - 1)
+            else if (i == height - 1)
             {
                 b = height - 1;
                 a = height - 2;
+            }
+            else
+            {
+                a = i - 1;
+                b = i + 1;
             }
             if (j == 0)
             {
                 c = 0;
                 d = j + 1;
             }
-            if (j == width - 1)
+            else if (j == width - 1)
             {
                 d = width - 1;
                 c = width - 2;
             }
+            else
+            {
+               c = j - 1;
+               d = j + 1;
+            }
 
+            for (int s = a; s <= b; s++)
+            {
+                for (int t = c; t <= d; t++)
+                {
 
+                }
+            }
 
             newImage[i][j] = ;
         }
