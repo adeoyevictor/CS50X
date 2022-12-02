@@ -38,7 +38,14 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE newImage[height][width];
-    // newImage = &image;
+
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width ; j++)
+        {
+            newImage[i][j] = image[i][j];
+        }
+    }
 
     for (int i = 0; i < height; i++)
     {
@@ -93,7 +100,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     count++;
                 }
             }
-            printf("%i %i %i", blue,green, red);
             newImage[i][j].rgbtBlue = (int) round((double) blue / count);
             newImage[i][j].rgbtGreen = (int) round((double) green / count);
             newImage[i][j].rgbtRed = (int) round((double) red / count);
