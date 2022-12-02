@@ -140,7 +140,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int t = c; t <= d; t++)
                 {
-
+                    
                 }
             }
 
