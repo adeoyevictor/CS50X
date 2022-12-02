@@ -64,8 +64,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
             if (j == width - 1)
             {
-                b = height - 1;
-                a = height - 2;
+                d = width - 1;
+                c = width - 2;
             }
 
 
@@ -81,3 +81,5 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 {
     return;
 }
+
+
