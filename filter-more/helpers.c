@@ -136,7 +136,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             c = j - 1;
             d = j + 1;
 
-            int arr[3][3];
+            RGBTRIPLE arr[3][3];
 
             for (int s = a; s <= b; s++)
             {
