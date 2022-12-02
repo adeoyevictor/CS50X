@@ -83,8 +83,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
             else
             {
-               c = j - 1;
-               d = j + 1;
+                c = j - 1;
+                d = j + 1;
             }
             int blue = 0;
             int green = 0;
