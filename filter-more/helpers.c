@@ -77,7 +77,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                c = j - 1;
                d = j + 1;
             }
-
+            
             for (int s = a; s <= b; s++)
             {
                 for (int t = c; t <= d; t++)
