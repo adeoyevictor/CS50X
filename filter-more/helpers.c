@@ -147,6 +147,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         arr[s][t] = 0;
                     }
                     if (t < 0)
+                    {
+                        arr[]
+                    }
                 }
             }
 
