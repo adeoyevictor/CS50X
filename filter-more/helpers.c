@@ -142,14 +142,14 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int t = c; t <= d; t++)
                 {
-                    if (s < 0)
-                    {
-                        arr[s + 1][t + 1] = 0;
-                    }
-                    if (t < 0)
-                    {
-                        arr[s + 1][t + 1] = 0;
-                    }
+                    // if (s < 0)
+                    // {
+                    //     arr[s + 1][t + 1] = 0;
+                    // }
+                    // if (t < 0)
+                    // {
+                    //     arr[s + 1][t + 1] = 0;
+                    // }
 
                     arr[s][t] = image[s][t];
                 }
