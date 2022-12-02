@@ -143,9 +143,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             }
             else if (i == height - 1 && j == width - 1)
             {
-                gx_blue +=  (image[i][j - 1].rgbtBlue * -2) +  (image[i - 1][j - 1].rgbtBlue * -1) 
+                gx_blue +=  (image[i][j - 1].rgbtBlue * -2) +  (image[i - 1][j - 1].rgbtBlue * -1)
             }
-
+            else if (i == 0)
+            {
+                
+            }
 
 
 
