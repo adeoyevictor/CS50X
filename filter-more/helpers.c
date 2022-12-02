@@ -130,7 +130,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             int gx_blue = 0;
 
 
-            gx_blue += (image[i][j].rgbtBlue * 0) + (image[i - 1][j] * 0) + (image[i + 1][j] * 0) + (image[i][j - 1] * -2) + (image[i][j + 1] * 2) + (image[i - 1][j - 1] * -1) + (image[i + 1][j - 1] * -1) + (image[i - 1][j + 1] * 1) + (image[i + 1][j + 1] * 1)
+            gx_blue += (image[i][j].rgbtBlue * 0) + (image[i - 1][j].rgbtBlue * 0) + (image[i + 1][j].rgbtBlue * 0) + (image[i][j - 1].rgbtBlue * -2) + (image[i][j + 1].rgbtBlue * 2) + (image[i - 1][j - 1].rgbtBlue * -1) + (image[i + 1][j - 1].rgbtBlue * -1) + (image[i - 1][j + 1].rgbtBlue * 1) + (image[i + 1][j + 1].rgbtBlue * 1)
         }
     }
     return;
