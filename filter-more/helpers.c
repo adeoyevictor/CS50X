@@ -151,7 +151,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         arr[s + 1][t + 1] = 0;
                     }
 
-                    arr[s][t] = image
+                    arr[s][t] = image[s][t];
                 }
             }
 
