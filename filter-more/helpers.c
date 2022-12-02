@@ -126,9 +126,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width ; j++)
         {
-        //    RGBTRIPLE arr[3][3];
-
-
+            // GX Blue
+            int gx_blue = 0;
+            
         }
     }
     return;
