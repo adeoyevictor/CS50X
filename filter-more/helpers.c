@@ -50,10 +50,12 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             if (i == 0)
             {
                 a = 0;
+                b = i + 1;
             }
             if (i == height - 1)
             {
-                
+                b = height - 1;
+                a = 
             }
 
 
