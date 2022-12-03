@@ -125,7 +125,27 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
     int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
 
-    
+      for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width ; j++)
+        {
+
+            int redx = 0;
+            int greenx = 0;
+            int bluex = 0;
+            int redy = 0;
+            int greeny = 0;
+            int bluey = 0;
+
+            for (int s = -1; s < 2; s++)
+            {
+                for (int t = -1; t < 2; t++)
+                {
+                    
+                }
+            }
+        }
+    }
     return;
 }
 
