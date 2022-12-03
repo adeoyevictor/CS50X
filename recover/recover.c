@@ -23,8 +23,7 @@ int main(int argc, char *argv[])
 
     while (fread(read, 1, 512, input) == 512)
     {
-
-
+        if(read[0] ==)
     }
 
 }
