@@ -29,18 +29,18 @@ int main(int argc, char *argv[])
         {
             if (count == 0)
             {
-
+                char *name = malloc(8);
+                sprintf(name, "%03i.jpg", count);
+                FILE *img = fopen(name, "w");
+                fwrite(read, 1, 512, img);
+                free(name);
+                count++;
             }
             else
             {
-                
+
             }
-            char *name = malloc(8);
-            sprintf(name, "%03i.jpg", count);
-            FILE *img = fopen(name, "w");
-            fwrite(read, 1, 512, img);
-            free(name);
-            count++;
+
         }
 
     }
