@@ -34,6 +34,10 @@ int main(int argc, char *argv[])
                 FILE *img = fopen(name, "w");
                 fwrite(read, 1, 512, img);
             }
+            else
+            {
+
+            }
 
             // free(name);
             // count++;
