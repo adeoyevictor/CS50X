@@ -43,6 +43,10 @@ int main(int argc, char *argv[])
         }
         else
         {
+            if (count == 0)
+            {
+                continue;
+            }
             fwrite(read, 1, 512, img);
         }
 
