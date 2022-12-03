@@ -149,12 +149,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     {
                         continue;
                     }
-                    redx += newImage[i + k][j + l].rgbtRed * Gx[k + 1][l + 1];
-                    greenx += newImage[i + k][j + l].rgbtGreen * Gx[k + 1][l + 1];
-                    bluex += newImage[i + k][j + l].rgbtBlue * Gx[k + 1][l + 1];
-                    redy += newImage[i + k][j + l].rgbtRed * Gy[k + 1][l + 1];
-                    greeny += newImage[i + k][j + l].rgbtGreen * Gy[k + 1][l + 1];
-                    bluey += newImage[i + k][j + l].rgbtBlue * Gy[k + 1][l + 1];
+                    redx += newImage[i + s][j + t].rgbtRed * Gx[s + 1][t + 1];
+                    greenx += newImage[i + s][j + t].rgbtGreen * Gx[s + 1][t + 1];
+                    bluex += newImage[i + s][j + t].rgbtBlue * Gx[s + 1][t + 1];
+                    redy += newImage[i + s][j + t].rgbtRed * Gy[s + 1][t + 1];
+                    greeny += newImage[i + s][j + t].rgbtGreen * Gy[s + 1][t + 1];
+                    bluey += newImage[i + s][j + t].rgbtBlue * Gy[s + 1][t + 1];
                 }
             }
         }
