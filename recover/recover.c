@@ -28,19 +28,17 @@ int main(int argc, char *argv[])
     {
         if (read[0] == 0xff && read[1] == 0xd8 && read[2] == 0xff && (read[3] & 0xf0) == 0xe0)
         {
+            char *name = malloc(8);
+            sprintf(name, "%03i.jpg", count);
+            FILE *img = fopen(name, "w");
             if (count == 0)
             {
-                char *name = malloc(8);
-                sprintf(name, "%03i.jpg", count);
-                FILE *img = fopen(name, "w");
                 fwrite(read, 1, 512, img);
             }
             else
             {
                 fclose(img);
                 count++;
-                char *name = malloc(8);
-                sprintf(name, "%03i.jpg", count);
                 FILE *img = fopen(name, "w");
                 fwrite(read, 1, 512, img);
             }
