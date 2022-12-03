@@ -24,6 +24,9 @@ int main(int argc, char *argv[])
     while (fread(read, 1, 512, input) == 512)
     {
         if(read[0] == 0xff && read[1] == 0xd8 && read[2] == 0xff && (read[3] & 0xf0) == 0xe0)
+        {
+            
+        }
     }
 
 }
