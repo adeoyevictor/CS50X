@@ -202,7 +202,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
             else
             {
-                bluey = bluey + (newImage[i - 1][j - 1].rgbtBlue * -1) + ()
+                bluey = bluey + (newImage[i - 1][j - 1].rgbtBlue * -1) + (newImage[i - 1][j].rgbtBlue * -2) + (newImage[i - 1][j + 1].rgbtBlue * -1) + (newImage[i + 1][j - 1].rgbtBlue * 1) + (newImage[i + 1][j ].rgbtBlue * 2) + (newImage[i + 1][j - 1].rgbtBlue * -1)
 
             }
 
