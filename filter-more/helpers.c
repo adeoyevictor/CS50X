@@ -157,7 +157,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     bluey += newImage[i + s][j + t].rgbtBlue * Gy[s + 1][t + 1];
 
                     int blue = round(sqrt((bluex * bluex) + (bluey * bluey)));
-                    int green = round(sqrt((greenx * greenx) + (greeny * greeny)))
+                    int green = round(sqrt((greenx * greenx) + (greeny * greeny)));
                     int red =  round(sqrt((redx * redx) + (redy * redy)));
 
                     if (red > 255)
