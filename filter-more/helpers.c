@@ -130,12 +130,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width ; j++)
         {
 
-            int redx = 0;
-            int greenx = 0;
-            int bluex = 0;
-            int redy = 0;
-            int greeny = 0;
-            int bluey = 0;
+            float redx = 0;
+            float greenx = 0;
+            float bluex = 0;
+            float redy = 0;
+            float greeny = 0;
+            float bluey = 0;
 
             for (int s = -1; s < 2; s++)
             {
@@ -156,9 +156,25 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     greeny += newImage[i + s][j + t].rgbtGreen * Gy[s + 1][t + 1];
                     bluey += newImage[i + s][j + t].rgbtBlue * Gy[s + 1][t + 1];
 
-                    image[i][j].rgbtBlue = (int)round(sqrt((bluex * bluex) + (bluey * bluey)));
-                    image[i][j].rgbtGreen = (int)round(sqrt((greenx * greenx) + (greeny * greeny)));
-                    image[i][j].rgbtRed = (int)round(sqrt((redx * redx) + (redy * redy)));
+                    int blue = round(sqrt((bluex * bluex) + (bluey * bluey)));
+                    int green = round(sqrt((greenx * greenx) + (greeny * greeny)))
+                    int red =  round(sqrt((redx * redx) + (redy * redy)));
+
+                    if (red > 255)
+                    {
+                        red = 255;
+                    }
+                    if (green > 255)
+                    {
+                        green = 255;
+                    }
+                    if (blue > 255)
+                    {
+                        blue = 255;
+                    }
+                    image[i][j].rgbtBlue = blue;
+                    image[i][j].rgbtGreen = green;
+                    image[i][j].rgbtRed = red;
                 }
             }
         }
