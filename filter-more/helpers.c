@@ -206,7 +206,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 redx = redx +  (newImage[i][j - 1].rgbtRed * -2) + (newImage[i - 1][j - 1].rgbtRed * -1) + (newImage[i + 1][j - 1].rgbtRed * -1);
                 bluey = bluey + (newImage[i - 1][j - 1].rgbtBlue * -1) + (newImage[i - 1][j].rgbtBlue * -2) + (newImage[i + 1][j - 1].rgbtBlue * 1) + (newImage[i + 1][j].rgbtBlue * 2);
                 greeny = greeny + (newImage[i - 1][j - 1].rgbtGreen * -1) + (newImage[i - 1][j].rgbtGreen * -2) + (newImage[i + 1][j - 1].rgbtGreen * 1) + (newImage[i + 1][j].rgbtGreen * 2);
-                bluey = bluey + (newImage[i - 1][j - 1].rgbtBlue * -1) + (newImage[i - 1][j].rgbtBlue * -2) + (newImage[i + 1][j - 1].rgbtBlue * 1) + (newImage[i + 1][j].rgbtBlue * 2);
+                redy = redy + (newImage[i - 1][j - 1].rgbtRed * -1) + (newImage[i - 1][j].rgbtRed * -2) + (newImage[i + 1][j - 1].rgbtRed * 1) + (newImage[i + 1][j].rgbtRed * 2);
             }
             else
             {
@@ -224,9 +224,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
             }
 
-            // image[i][j].rgbtBlue = (int)sqrt(bluex * bluex);
-            // image[i][j].rgbtGreen = (int)sqrt(greenx * bluex);
-            // image[i][j].rgbtRed = (int)sqrt(redx * bluex);
+            image[i][j].rgbtBlue = (int)sqrt((bluex * bluex) + (bluey * bluey));
+            image[i][j].rgbtGreen = (int)sqrt((greenx * greenx) + (greeny * greeny));
+            image[i][j].rgbtRed = (int)sqrt((redx * redx) + (redy * redy));
 
         }
     }
