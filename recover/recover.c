@@ -27,8 +27,9 @@ int main(int argc, char *argv[])
     {
         if(read[0] == 0xff && read[1] == 0xd8 && read[2] == 0xff && (read[3] & 0xf0) == 0xe0)
         {
-            
-            count++
+            char *name = malloc(8);
+            sprintf(name,);
+            count++;
         }
     }
 
