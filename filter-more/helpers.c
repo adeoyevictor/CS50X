@@ -139,7 +139,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
             for (int s = -1; s < 2; s++)
             {
-                for (int t = -1, t < 2; t++)
+                for (int t = -1; t < 2; t++)
                 {
 
                     if (i + s < 0 || i + s >= height)
@@ -155,7 +155,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     bluex += newImage[i + s][j + t].rgbtBlue * Gx[s + 1][t + 1];
                     redy += newImage[i + s][j + t].rgbtRed * Gy[s + 1][t + 1];
                     greeny += newImage[i + s][j + t].rgbtGreen * Gy[s + 1][t + 1];
-                    bluey += newImage[i + s][j + t].rgbtBlue * Gy[s + 1][t + 1];cd f    
+                    bluey += newImage[i + s][j + t].rgbtBlue * Gy[s + 1][t + 1];
 
 
                     int blue = round(sqrt((bluex * bluex) + (bluey * bluey)));
