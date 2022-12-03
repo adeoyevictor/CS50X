@@ -8,4 +8,7 @@ int main(int argc, char *argv[])
         printf("ERROR: Usage ./recover FILE\n");
         return 1;
     }
+
+    FILE *f = fopen(argv[1], 'r');
+
 }
