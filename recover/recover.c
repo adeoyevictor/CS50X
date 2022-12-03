@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     BYTE read[512];
 
-    int count = 0;
+    // int count = 0;
 
     while (fread(read, 1, 512, input) == 512)
     {
