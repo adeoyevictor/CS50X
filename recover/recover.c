@@ -22,7 +22,10 @@ int main(int argc, char *argv[])
     BYTE read[512];
 
     int count = 0;
-
+    
+    char *name = malloc(8);
+    sprintf(name, "%03i.jpg", count);
+    FILE *img = fopen(name, "w");
 
     while (fread(read, 1, 512, input) == 512)
     {
@@ -30,9 +33,7 @@ int main(int argc, char *argv[])
         {
             if (count == 0)
             {
-                char *name = malloc(8);
-                sprintf(name, "%03i.jpg", count);
-                FILE *img = fopen(name, "w");
+
                 // fwrite(read, 1, 512, img);
             }
             // else
