@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-
+                fclose(name);
             }
 
             // free(name);
