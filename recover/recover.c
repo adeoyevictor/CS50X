@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    BYTE read[512];
+
     while (fread(buffer, 1, 512, input) == 512)
     {
 
