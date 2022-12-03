@@ -126,9 +126,10 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width ; j++)
         {
-            int gxblue;
-            int gxgreen;
-            int gxred;
+            int blue;
+            int green;
+            int red;
+            printf("%i %i %i", blue, green, red);
         }
     }
     return;
