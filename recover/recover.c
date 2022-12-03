@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
             char *name = malloc(8);
             sprintf(name, "%03i.jpg", count);
             FILE *img = fopen(name, "w");
-            fwrite(read, 1, 512)
+            fwrite(read, 1, 512, img);
             count++;
         }
     }
