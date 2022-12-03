@@ -27,15 +27,21 @@ int main(int argc, char *argv[])
     {
         char *name = malloc(8);
         sprintf(name, "%03i.jpg", count);
+        FILE *img = fopen(name, "w");
         if (read[0] == 0xff && read[1] == 0xd8 && read[2] == 0xff && (read[3] & 0xf0) == 0xe0)
         {
-            FILE *img = fopen(name, "w");
-            fwrite(read, 1, 512, img);
-            // count++;
+            if (count == 0)
+            {
+                fwrite(read, 1, 512, img);
+            }
+            else
+            {
+                
+            }
         }
         else
         {
-
+            fwrite(read, 1, 512, img);
         }
 
     }
