@@ -224,9 +224,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
             }
 
-            image[i][j].rgbtBlue = (int)sqrt((bluex * bluex) + (bluey * bluey));
-            image[i][j].rgbtGreen = (int)sqrt((greenx * greenx) + (greeny * greeny));
-            image[i][j].rgbtRed = (int)sqrt((redx * redx) + (redy * redy));
+            image[i][j].rgbtBlue = (int)round(sqrt((bluex * bluex) + (bluey * bluey)));
+            image[i][j].rgbtGreen = (int)round(sqrt((greenx * greenx) + (greeny * greeny)));
+            image[i][j].rgbtRed = (int)round(sqrt((redx * redx) + (redy * redy)));
 
         }
     }
