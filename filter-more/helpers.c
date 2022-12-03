@@ -145,7 +145,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     {
                         continue;
                     }
-                    if (j + l < 0 || j + l >= width)
+                    if (j + t < 0 || j + t >= width)
                     {
                         continue;
                     }
