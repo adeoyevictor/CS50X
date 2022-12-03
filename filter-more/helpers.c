@@ -129,12 +129,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             int blue = 0;
             int green = 0;
             int red = 0;
-            if (i == 0 && j == 0)
-            {
-                  gxblue += (image[i][j + 1].rgbtBlue * 2) + (image[i + 1][j + 1].rgbtBlue * 1);
-                  gxgreen += (image[i][j + 1].rgbtGreen * 2) + (image[i + 1][j + 1].rgbtGreen * 1);
-                  gxred += (image[i][j + 1].rgbtRed * 2) + (image[i + 1][j + 1].rgbtRed * 1);
-            }
+            // if (i == 0 && j == 0)
+            // {
+            //       blue += (image[i][j + 1].rgbtBlue * 2) + (image[i + 1][j + 1].rgbtBlue * 1);
+            //       green += (image[i][j + 1].rgbtGreen * 2) + (image[i + 1][j + 1].rgbtGreen * 1);
+            //       red += (image[i][j + 1].rgbtRed * 2) + (image[i + 1][j + 1].rgbtRed * 1);
+            // }
         }
     }
     return;
