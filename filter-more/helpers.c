@@ -189,10 +189,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
             }
 
-            int xvalue = bluex + greenx + redx;
-            xvalue = (int)sqrt(xvalue * xvalue);
-
-            image[i][j] 
+            
         }
     }
     return;
