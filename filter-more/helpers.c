@@ -142,8 +142,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                   redx = (newImage[i][j + 1].rgbtRed * 2) + (newImage[i + 1][j + 1].rgbtRed * 1);
 
                   bluey = (newImage[i + 1][j].rgbtBlue * 2) + (newImage[i + 1][j + 1].rgbtBlue * 1);
-                  greeny = greeny +  (newImage[i + 1][j].rgbtGreen * 2) + (newImage[i + 1][j + 1].rgbtGreen * 1);
-                  redy = redy +  (newImage[i + 1][j].rgbtRed * 2) + (newImage[i + 1][j + 1].rgbtRed * 1);
+                  greeny = (newImage[i + 1][j].rgbtGreen * 2) + (newImage[i + 1][j + 1].rgbtGreen * 1);
+                  redy = (newImage[i + 1][j].rgbtRed * 2) + (newImage[i + 1][j + 1].rgbtRed * 1);
 
             }
             // else if (i == 0 && j == width - 1)
