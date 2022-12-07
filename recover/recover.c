@@ -20,39 +20,48 @@ int main(int argc, char *argv[])
     }
 
     BYTE read[512];
-
     int count = 0;
 
+    char *name = malloc(8 * sizeof(char));
 
-    while (fread(read, 512, 1, input) == 1)
+    FILE *img = NULL;
+
+    while (fread(read, sizeof(BYTE) * 512, 1, input) == 1)
     {
         if (read[0] == 0xff && read[1] == 0xd8 && read[2] == 0xff && (read[3] & 0xf0) == 0xe0)
         {
-            char *name = malloc(8);
-            sprintf(name, "%03i.jpg", count);
-            FILE *img = fopen(name, "w");
+
             if (count == 0)
             {
-                fwrite(read, 1, 512, img);
+                sprintf(name, "%03i.jpg", count);
+                img = fopen(name, "w");
+                fwrite(read, sizeof(BYTE) * 512, 1, img);
+                count++;
             }
             else
             {
                 fclose(img);
+                sprintf(name, "%03i.jpg", count);
+                img = fopen(name, "w");
+                fwrite(read, sizeof(BYTE) * 512, 1, img);
                 count++;
-                FILE *img = fopen(name, "w");
-                fwrite(read, 1, 512, img);
             }
+
         }
         else
         {
-            // if (count == 0)
-            // {
-            //     continue;
-            // }
-            // fwrite(read, 1, 512, img);
+            if (count == 0)
+            {
+                continue;
+            }
+            fwrite(read, sizeof(BYTE) * 512, 1, img);
         }
 
     }
+    fclose(input);
+    fclose(img);
+    free(name);
+    return 0;
 
 }
 
