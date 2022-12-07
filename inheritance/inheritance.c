@@ -63,8 +63,9 @@ person *create_family(int generations)
         root -> parents[0] = NULL;
         root -> parents[1] = NULL;
         // TODO: Randomly assign alleles
-        root -> alleles[0] = parent0 -> alleles[rand() % 2];
-        root -> alleles[1] = parent1 -> alleles[rand() % 2];
+        char alleles[] = {'A', 'B', 'O'};
+        root -> alleles[0] = alleles[rand() % 3];
+        root -> alleles[1] = alleles[rand() % 3];
     }
 
     // TODO: Return newly created person
