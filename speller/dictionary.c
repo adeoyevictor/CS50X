@@ -48,13 +48,13 @@ bool load(const char *dictionary)
     char buffer[LENGTH + 1];
     while (fscanf(file, "%s", buffer) !== EOF)
     {
-        node *newNode = malloc(sizeof(node));
+        node *n = malloc(sizeof(node));
         if (newNode == NULL)
         {
             return false;
         }
-        strcpy(newNode -> word , buffer);
-        int idx = hash(newNode -> word);
+        strcpy(n -> word , buffer);
+        int idx = hash(n -> word);
     }
 
     return false;
