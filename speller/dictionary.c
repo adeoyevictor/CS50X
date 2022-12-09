@@ -44,10 +44,14 @@ bool load(const char *dictionary)
         return false;
     }
 
-    char buffer[LENGTH];
+    char buffer[LENGTH + 1];
     while (fscanf(file, "%s", buffer) !== EOF)
     {
-
+        node *newNode = malloc(sizeof(node));
+        if (newNode == NULL)
+        {
+            return false;
+        }
     }
 
     return false;
