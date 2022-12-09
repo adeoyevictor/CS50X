@@ -42,7 +42,8 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    fscanf(file, "%s", );
+    char buffer[LENGTH];
+    fscanf(file, "%s", buffer);
     return false;
 }
 
