@@ -1,5 +1,6 @@
 // Implements a dictionary's functionality
 #include <stdio.h>
+#include <string.h>
 
 #include <ctype.h>
 #include <stdbool.h>
@@ -52,6 +53,7 @@ bool load(const char *dictionary)
         {
             return false;
         }
+        strcpy(newNode -> word , buffer);
     }
 
     return false;
