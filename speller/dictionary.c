@@ -54,6 +54,7 @@ bool load(const char *dictionary)
             return false;
         }
         strcpy(newNode -> word , buffer);
+        int idx = hash(newNode -> word);
     }
 
     return false;
