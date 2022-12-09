@@ -1,4 +1,5 @@
 // Implements a dictionary's functionality
+#include <stdio.h>
 
 #include <ctype.h>
 #include <stdbool.h>
@@ -42,8 +43,13 @@ bool load(const char *dictionary)
     {
         return false;
     }
+
     char buffer[LENGTH];
-    fscanf(file, "%s", buffer);
+    while ( fscanf(file, "%s", buffer) !== EOF)
+    {
+        
+    }
+
     return false;
 }
 
