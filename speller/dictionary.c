@@ -106,9 +106,9 @@ bool unload(void)
     for (int i = 0; i < N; i++)
     {
         node *n = table[i];
-        for (node *tmp = n, node *cursor = n; tmp != NULL; tmp = tmp->next)
+        for (node *tmp = n; tmp != NULL; tmp = tmp->next)
         {
-            
+// , node *cursor = n
         }
     }
     return false;
