@@ -71,6 +71,7 @@ bool load(const char *dictionary)
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
+            // unload();
             return false;
         }
         strcpy(n -> word , buffer);
@@ -101,11 +102,7 @@ unsigned int size(void)
 }
 void freeNode(node *n)
 {
-    if(n -> next == NULL)
-    {
-        return;
-    }
-    else
+    if(n -> next != NULL)
     {
         freeNode(n -> next);
     }
