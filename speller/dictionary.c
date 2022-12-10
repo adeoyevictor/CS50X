@@ -99,16 +99,7 @@ unsigned int size(void)
 
     return no;
 }
-void freeNode(node *n)
-{
-    // node *cursor = n;
-    while (cursor)
-    {
-        node *tmp = cursor;
-        cursor = cursor -> next;
-        free(tmp);
-    }
-}
+
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
