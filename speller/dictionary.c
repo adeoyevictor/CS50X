@@ -105,7 +105,14 @@ bool unload(void)
     // TODO
     for (int i = 0; i < N; i++)
     {
-        
+        node *n = table[i];
+        for (node *tmp = n; tmp != NULL; tmp = tmp->next)
+        {
+            if(strcasecmp(tmp -> word, word) == 0)
+            {
+                return true;
+            }
+        }
     }
     return false;
 }
