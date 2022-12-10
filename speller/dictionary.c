@@ -92,6 +92,7 @@ bool load(const char *dictionary)
         if (start == NULL)
         {
             table[idx] = n;
+            n -> next = NULL;
         }
         else
         {
