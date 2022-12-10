@@ -87,7 +87,7 @@ bool load(const char *dictionary)
         }
         no++;
     }
-
+    fclose(file);
     return true;
 }
 
@@ -103,5 +103,6 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+    
     return false;
 }
