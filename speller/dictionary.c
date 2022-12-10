@@ -102,8 +102,10 @@ unsigned int size(void)
 }
 void freeNode(node *n)
 {
-    if(n -> next != NULL)
+    node *cursor = n;
+    while (n -> next != NULL)
     {
+        node *tmp = n -> next;
         freeNode(n -> next);
     }
     free(n);
