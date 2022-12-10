@@ -66,6 +66,12 @@ bool load(const char *dictionary)
     }
 
     char buffer[LENGTH + 1];
+
+    for (int i = 0; i < N; i++)
+    {
+        table[i] = NULL;
+    }
+
     while (fscanf(file, "%s", buffer) != EOF)
     {
         node *n = malloc(sizeof(node));
