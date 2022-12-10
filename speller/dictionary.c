@@ -88,7 +88,7 @@ bool load(const char *dictionary)
         }
         no++;
     }
-    // fclose(file);
+    fclose(file);
     return true;
 }
 
@@ -117,4 +117,3 @@ bool unload(void)
     return true;
 }
 
- 
