@@ -78,15 +78,13 @@ bool load(const char *dictionary)
         node *start = table[idx];
         if (start == NULL)
         {
-
+            table[idx] = n;
         }
         else
         {
-            
+            n -> next = table[idx];
+            table[idx] = n;
         }
-
-        n -> next = table[idx];
-        table[idx] = n;
         no++;
     }
 
