@@ -118,7 +118,7 @@ bool unload(void)
 void freeNode(node *n)
 {
     // node *cursor = table[i];
-    while ( != NULL)
+    while (n -> next != NULL)
     {
         node *temp = cursor;
         cursor = cursor -> next;
