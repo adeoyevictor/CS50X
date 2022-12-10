@@ -75,7 +75,16 @@ bool load(const char *dictionary)
         strcpy(n -> word , buffer);
         int idx = hash(n -> word);
 
-        
+        node *start = table[idx];
+        if (start == NULL)
+        {
+
+        }
+        else
+        {
+            
+        }
+
         n -> next = table[idx];
         table[idx] = n;
         no++;
