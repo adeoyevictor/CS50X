@@ -106,10 +106,8 @@ bool unload(void)
     // TODO
     for (int i = 0; i < N; i++)
     {
-        if (table[i] != NULL)
-        {
-            freeNode(table[i]);
-        }
+        node *cursor = table[i];
+        
 
     }
     return true;
