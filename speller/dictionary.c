@@ -105,10 +105,10 @@ void freeNode(node *n)
     node *cursor = n;
     while (cursor != NULL)
     {
-        node *tmp = n -> next;
-        freeNode(n -> next);
+        node *tmp = cursor;
+        cursor = cursor -> next;
+        free(tmp);
     }
-    free(n);
 }
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
