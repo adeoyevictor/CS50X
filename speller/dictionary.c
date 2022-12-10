@@ -32,6 +32,7 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
+    int total = 0;
 
     // TODO: Improve this hash function
 
