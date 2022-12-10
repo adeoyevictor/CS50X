@@ -101,7 +101,11 @@ unsigned int size(void)
 }
 void freeNode(node *n)
 {
-    if(n -> next != NULL)
+    if(n -> next == NULL)
+    {
+        return;
+    }
+    else
     {
         freeNode(n -> next);
     }
