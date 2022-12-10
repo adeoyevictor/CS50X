@@ -32,7 +32,7 @@ bool check(const char *word)
     node *n = table[idx];
     for (node *tmp = n; tmp != NULL; tmp = tmp->next)
     {
-        if(strcasecmp(tmp -> word, word) == 0)
+        if (strcasecmp(tmp -> word, word) == 0)
         {
             return true;
         }
@@ -74,7 +74,7 @@ bool load(const char *dictionary)
             // unload();
             return false;
         }
-        strcpy(n -> word , buffer);
+        strcpy(n -> word, buffer);
         int idx = hash(n -> word);
 
         node *start = table[idx];
