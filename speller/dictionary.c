@@ -64,14 +64,14 @@ bool load(const char *dictionary)
         return false;
     }
 
+    char buffer[LENGTH + 1];
     while (fscanf(file, "%s", buffer) != EOF)
     {
+        node *n = malloc(sizeof(node));
         if (n == NULL)
         {
             return false;
         }
-        char buffer[LENGTH + 1];
-        node *n = malloc(sizeof(node));
         strcpy(n -> word , buffer);
         int idx = hash(n -> word);
         n -> next = table[idx];
