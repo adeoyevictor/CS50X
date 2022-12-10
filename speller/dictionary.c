@@ -70,6 +70,7 @@ bool load(const char *dictionary)
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
+            
             return false;
         }
         strcpy(n -> word , buffer);
