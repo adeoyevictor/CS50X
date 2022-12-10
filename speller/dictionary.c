@@ -33,7 +33,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     int total = 0;
-    for (int i = 0, n = strlen(s); i < n; i++)
+    for (int i = 0, n = strlen(word); i < n; i++)
     {
         if (isalpha(word[i]))
         {
