@@ -28,6 +28,10 @@ bool check(const char *word)
     // TODO
     int idx = hash(word);
     node *n = table[idx];
+    for (node *tmp = n; tmp != NULL; tmp = tmp->next)
+    {
+        if(str)
+    }
     return false;
 }
 
