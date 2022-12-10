@@ -55,10 +55,10 @@ bool load(const char *dictionary)
         }
         strcpy(n -> word , buffer);
 
-        // n -> next = NULL;
+
 
         int idx = hash(n -> word);
-        
+        n -> next = table[idx];
         table[idx] -> next = n;
     }
 
