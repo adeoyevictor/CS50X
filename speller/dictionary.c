@@ -1,6 +1,7 @@
 // Implements a dictionary's functionality
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include <ctype.h>
 #include <stdbool.h>
@@ -46,7 +47,7 @@ bool load(const char *dictionary)
     }
 
     char buffer[LENGTH + 1];
-    while (fscanf(file, "%s", buffer) !== EOF)
+    while (fscanf(file, "%s", buffer) != EOF)
     {
         node *n = malloc(sizeof(node));
         if (n == NULL)
@@ -54,9 +55,6 @@ bool load(const char *dictionary)
             return false;
         }
         strcpy(n -> word , buffer);
-
-
-
         int idx = hash(n -> word);
         n -> next = table[idx];
         table[idx] = n;
