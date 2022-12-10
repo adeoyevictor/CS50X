@@ -108,7 +108,7 @@ bool unload(void)
         node *n = table[i];
         for (node *tmp = n; tmp != NULL; tmp = tmp->next)
         {
-// , node *cursor = n
+, node *cursor = n
         }
     }
     return true;
