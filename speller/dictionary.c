@@ -70,7 +70,7 @@ bool load(const char *dictionary)
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
-            
+            unload();
             return false;
         }
         strcpy(n -> word , buffer);
@@ -109,7 +109,7 @@ bool unload(void)
         node *cursor = table[i];
         node *temp = cursor;
 
-        while (cursor !`= NULL)
+        while (cursor != NULL)
         {
             cursor = cursor -> next;
             free(temp);
