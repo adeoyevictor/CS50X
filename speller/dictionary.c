@@ -30,6 +30,11 @@ bool check(const char *word)
     // TODO
     int idx = hash(word);
     node *n = table[idx];
+    if (table[idx] == NULL)
+    {
+        return false;
+    }
+
     for (node *tmp = n; tmp != NULL; tmp = tmp->next)
     {
         if (strcasecmp(tmp -> word, word) == 0)
