@@ -38,7 +38,7 @@ unsigned int hash(const char *word)
         total += toupper(word[i]) - 'A';
     }
     // TODO: Improve this hash function
-    return toupper(word[0]) - 'A';
+    return total;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
