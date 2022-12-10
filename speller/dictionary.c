@@ -18,7 +18,7 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 1125;
-int size = 0;
+unsigned int size = 0;
 // Hash table
 node *table[N];
 
@@ -76,6 +76,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
+
     return size;
 }
 
