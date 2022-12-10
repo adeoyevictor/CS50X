@@ -108,10 +108,7 @@ bool unload(void)
         node *n = table[i];
         for (node *tmp = n, node *cursor = n; tmp != NULL; tmp = tmp->next)
         {
-            if(strcasecmp(tmp -> word, word) == 0)
-            {
-                return true;
-            }
+            
         }
     }
     return false;
