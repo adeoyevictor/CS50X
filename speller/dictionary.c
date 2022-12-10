@@ -9,6 +9,7 @@
 
 #include "dictionary.h"
 
+void freeNode(node *n);
 // Represents a node in a hash table
 typedef struct node
 {
@@ -106,14 +107,21 @@ bool unload(void)
     // TODO
     for (int i = 0; i < N; i++)
     {
-        node *cursor = table[i];
-
-        while (cursor != NULL)
+        if (table[i] != NULL)
         {
-            node *temp = cursor;
-            cursor = cursor -> next;
-            free(temp);
+            freeNode(table[i])
         }
+
     }
     return true;
+}
+void freeNode(node *n)
+{
+    node *cursor = table[i];
+    while (cursor != NULL)
+    {
+        node *temp = cursor;
+        cursor = cursor -> next;
+        free(temp);
+    }
 }
