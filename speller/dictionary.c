@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+#include <cs50.h>
+#include <strings.h>
 #include <ctype.h>
 #include <stdbool.h>
 
@@ -30,7 +31,10 @@ bool check(const char *word)
     node *n = table[idx];
     for (node *tmp = n; tmp != NULL; tmp = tmp->next)
     {
-        if(str)
+        if(strcasecmp(tmp -> word, word) == 0)
+        {
+            return true;
+        }
     }
     return false;
 }
