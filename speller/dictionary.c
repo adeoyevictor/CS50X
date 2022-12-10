@@ -35,7 +35,10 @@ unsigned int hash(const char *word)
     int total = 0;
     for (int i = 0, n = strlen(s); i < n; i++)
     {
-        total += toupper(word[i]) - 'A';
+        if (isalpha(word[i]))
+        {
+            total += toupper(word[i]) - 'A';
+        }
     }
     // TODO: Improve this hash function
     return total;
