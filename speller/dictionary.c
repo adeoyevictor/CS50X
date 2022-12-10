@@ -111,5 +111,5 @@ bool unload(void)
 // , node *cursor = n
         }
     }
-    return false;
+    return true;
 }
