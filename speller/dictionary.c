@@ -38,7 +38,6 @@ unsigned int hash(const char *word)
         total += word[i];
     }
     // TODO: Improve this hash function
-
     return toupper(word[0]) - 'A';
 }
 
