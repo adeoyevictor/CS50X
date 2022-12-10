@@ -9,7 +9,7 @@
 
 #include "dictionary.h"
 
-void freeNode(node *n);
+
 // Represents a node in a hash table
 typedef struct node
 {
