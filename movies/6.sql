@@ -1,3 +1,2 @@
-SE
+SELECT rating FROM ratings WHERE movie_id = (SELECT id FROM movies WHERE year = 2012);
 
-SELECT id FROM movies WHERE year = 2012;
