@@ -1,1 +1,1 @@
-SElECT rating FROM ratings WHERE rating = 10.0;
+SElECT COUNT(*) as counter FROM ratings WHERE rating = 10.0;
