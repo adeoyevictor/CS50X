@@ -1,1 +1,1 @@
-SELECT name FROM people JOIN 
+SELECT name FROM people JOIN stars ON people.id = 
