@@ -1,0 +1,1 @@
+SElECT title AND year FROM movies WHERE title LIKE = "Harry Potter%";
