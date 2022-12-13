@@ -1,4 +1,4 @@
-SELECT title FROM movies JOIN stars ON movies.id = stars.movie_id WHERE 
+SELECT title FROM movies JOIN stars ON movies.id = stars.movie_id WHERE person_id = (SELECT id FROM people WHERE name = "Johnny Depp");
 
 
 -- JOIN people ON stars.person_id = people.id WHERE person_id IN (
