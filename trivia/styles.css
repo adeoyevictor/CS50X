@@ -66,3 +66,10 @@ input[type="text"]:hover {
 .red{
     background-color: red;
 }
+
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
