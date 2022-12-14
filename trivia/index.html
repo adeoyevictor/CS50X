@@ -40,14 +40,16 @@
             const btns = document.querySelectorAll('.btn-1')
             btns.forEach((btn)=>{
                 btn.addEventListener('click', ()=>{
-                    
+                    btns.forEach((btn)=>{
+                        btn.classList.remove('green')
+                        btn.classList.remove('red')
+                    })
                     if(btn.textContent === 'HyperText Markup Language')
                     {
-                        btn.style.backgroundColor = "green"
+                        btn.classList.add('green')
                         return
-
                     }
-                    btn.style.backgroundColor = "red"
+                    btn.classList.add('red')
                 })
             })
         </script>
