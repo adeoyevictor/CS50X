@@ -40,8 +40,14 @@
             const btns = document.querySelectorAll('.btn-1')
             btns.forEach((btn)=>{
                 btn.addEventListener('click', ()=>{
-                    btn.style.backgroundColor = "red"
+                    
+                    if(btn.textContent === 'HyperText Markup Language')
+                    {
+                        btn.style.backgroundColor = "green"
+                        return
 
+                    }
+                    btn.style.backgroundColor = "red"
                 })
             })
         </script>
