@@ -66,8 +66,14 @@
             const result = document.querySelector('.result')
             const submit = document.querySelector('.submit').addEventListener('click', ()=>{
                 if (result.value === '100'){
+                    wrong.textContent = 'Correct!'
+                    wrong.classList.add('show')
                     result.style.backgroundColor = 'green'
+                    return
                 }
+                wrong.textContent = 'Incorrect!'
+                wrong.classList.add('show')
+                result.style.backgroundColor = 'red'
             })
 
 
