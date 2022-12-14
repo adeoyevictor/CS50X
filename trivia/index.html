@@ -36,7 +36,7 @@
                     What is your 10 * 10?
                 </h3>
                 <p class="wrong hide">Incorrect</p>
-                <input type="text" placeholder="Name" class="name">
+                <input type="text" placeholder="Result" class="result">
                 <input type="submit" class="submit">
             </div>
         </div>
@@ -63,8 +63,12 @@
                     btn.classList.add('red')
                 })
             })
-            const name = document.querySelector('.name')
-            const submit = document.querySelector('.submit')
+            const result = document.querySelector('.result').value
+            const submit = document.querySelector('.submit').addEventListener('click', ()=>{
+                if (name )
+            })
+
+
 
         </script>
     </body>
