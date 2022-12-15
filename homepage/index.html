@@ -43,11 +43,11 @@
 
             <script>
                 const btn = document.querySelector('button')
-                const colors = []
+                const colors = ['red', 'green', 'red', 'blue']
                 const toggleTheme = () =>
                 {
                     let number = Math.floor(Math.random() * colors.length)
-                    document.body.style.backgroundColor = 'red'
+                    document.body.style.backgroundColor = colors[number]
                 }
                 btn.addEventListener('click', toggleTheme)
             </script>
