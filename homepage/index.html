@@ -8,7 +8,7 @@
         <title>My Webpage</title>
     </head>
     <body>
-        <button class="btn btn-secondary">Change Theme</button>
+        <button class="btn btn-primary">Change Theme</button>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">Home</a>
@@ -40,5 +40,16 @@
                     </h1>
                 </div>
             </main>
+
+            <script>
+                const btn = document.querySelector('button')
+                const colors = []
+                const toggleTheme = () =>
+                {
+                    let number = Math.floor(Math.random() * colors.length)
+                    document.body.style.backgroundColor = 'red'
+                }
+                btn.addEventListener('click', toggleTheme)
+            </script>
     </body>
 </html>
