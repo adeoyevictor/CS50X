@@ -10,4 +10,12 @@ code
 }
 body
 {
+    background-color: lightgray;
+}
+
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
 }
