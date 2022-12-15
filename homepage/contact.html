@@ -51,5 +51,15 @@
                 </section>
             </div>
           </div>
+          <script>
+            const btn = document.querySelector('button')
+            const colors = [ '#FE5F55', '#EDAD62', '#00B295','#4ABD5C','#CB769E','#BD814A','#786F52','#A3C4BC','#4A64BD','#D6A2AD','#413C58','#BD4A4A']
+            const toggleTheme = () =>
+            {
+                let number = Math.floor(Math.random() * colors.length)
+                document.body.style.backgroundColor = colors[number]
+            }
+            btn.addEventListener('click', toggleTheme)
+        </script>
     </body>
 </html>
