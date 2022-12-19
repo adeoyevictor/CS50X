@@ -120,10 +120,19 @@ def register():
     if request.method == "GET":
         return render_template("register.html")
     else:
+        usernames = db.execute("SELECT username FROM users")
         username = request.form.get("username")
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
-        
+        if not username:
+            return apology("must provide username", 403)
+        elif username in usernames:
+            return apology("username already exists", 403)
+        elif not password or not confirmation:
+            return apology("Please input password and confirmation", 403)
+        elif password != confirmation:
+            return apology("password and confirmation must be the same")
+
         return apology("TODO")
 
 
