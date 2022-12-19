@@ -111,16 +111,17 @@ def logout():
 @login_required
 def quote():
     """Get stock quote."""
+
     return apology("TODO")
 
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    usernames = db.execute("SELECT username FROM users")
     if request.method == "GET":
         return render_template("register.html")
     else:
+        usernames = db.execute("SELECT username FROM users")
         username = request.form.get("username")
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
