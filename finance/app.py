@@ -133,7 +133,7 @@ def register():
         elif password != confirmation:
             return apology("password and confirmation must be the same")
         else:
-            db.execute("")
+            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, )
 
         return apology("TODO")
 
