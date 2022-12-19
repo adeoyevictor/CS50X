@@ -134,9 +134,7 @@ def register():
             return apology("password and confirmation must be the same")
         else:
             db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, generate_password_hash(password, method='pbkdf2:sha256', salt_length=8))
-
-        return apology("TODO")
-
+            return redirect("/")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
