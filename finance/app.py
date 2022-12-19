@@ -117,7 +117,7 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    usernames = SELECT
+    usernames = SELECT username FROM
     return apology("TODO")
 
 
