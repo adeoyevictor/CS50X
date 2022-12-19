@@ -132,6 +132,8 @@ def register():
             return apology("Please input password and confirmation", 403)
         elif password != confirmation:
             return apology("password and confirmation must be the same")
+        else:
+            
 
         return apology("TODO")
 
