@@ -119,7 +119,8 @@ def register():
     """Register user"""
     if request.method == "GET":
         return render_template("register.html")
-    # return apology("TODO")
+    else:
+        return apology("TODO")
 
 
 @app.route("/sell", methods=["GET", "POST"])
