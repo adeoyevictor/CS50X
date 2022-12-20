@@ -34,13 +34,11 @@
         </tr>
     </thead>
     <tbody>
-        {% for stock in stocks %}
         <tr>
-            <th>{{ stock.stock }}</th>
-            <th>{{ stock.shares }}</th>
-            <th>{{ stock.currentPrice }}</th>
+            <th>{{ cash[0]["cash"] }}</th>
+            <th></th>
+            <th></th>
         </tr>
-        {% endfor %}
     </tbody>
 </table>
 {% endblock %}
