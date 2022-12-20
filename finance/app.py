@@ -57,8 +57,7 @@ def buy():
         result = lookup(symbol)
         if result:
             return render_template("quoted.html", result=result)
-    return apology("Lookup unsuccessful", 403)
-    return apology("TODO")
+    return apology("Unsuccessful", 403)
 
 
 @app.route("/history")
