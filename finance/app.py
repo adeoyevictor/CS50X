@@ -59,6 +59,8 @@ def buy():
             return apology("Invalid shares", 403)
         result = lookup(symbol)
         if result:
+            cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
+            
             return render_template("quoted.html", result=result)
     return apology("Unsuccessful", 403)
 
