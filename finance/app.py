@@ -117,8 +117,8 @@ def quote():
         symbol = request.form.get("symbol")
         result = lookup(symbol)
         if result not None:
-            
-    return apology("TODO")
+            return render_template("quoted.html", result=result)
+    return apology("Lookup unsuccessful", 403)
 
 
 @app.route("/register", methods=["GET", "POST"])
