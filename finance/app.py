@@ -115,8 +115,9 @@ def quote():
         return render_template("quote.html")
     else:
         symbol = request.form.get("symbol")
-        
-        result = lookup()
+        result = lookup(symbol)
+        if result not None:
+            
     return apology("TODO")
 
 
