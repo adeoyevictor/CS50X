@@ -66,7 +66,7 @@ def buy():
         if cash < (shares * result.price):
             return apology("Not enough cash", 403)
         # track purchase
-        db.execute("INSERT INTO stocks")
+        db.execute("INSERT INTO stocks (user_id, stock, price) VALUES(?, ?, ?)", session["user_id"], symbol, )
         # update cash
         db.execute("UPDATE users SET cash =? WHERE id=?", cash - (shares * result.price), session["user_id"])
 
