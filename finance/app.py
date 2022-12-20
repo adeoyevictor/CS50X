@@ -62,11 +62,12 @@ def buy():
         shares = request.form.get("shares")
         if not shares or shares <= 0:
             return apology("Invalid shares", 403)
+        cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
+        if cash < (shares * result.price):
 
 
         return redirect("/")
-        cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
-        if cash < (shares * result.price):
+
 
     return apology("Unsuccessful", 403)
 
