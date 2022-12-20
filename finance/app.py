@@ -69,7 +69,7 @@ def buy():
         # track purchase
         db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)", session["user_id"], symbol, result.price, shares)
         # update cash
-        db.execute("UPDATE users SET cash =? WHERE id=?", cash - (shares * result.price), session["user_id"])
+        db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] - (shares * result["price"]), session["user_id"])
         return redirect("/")
 
 
