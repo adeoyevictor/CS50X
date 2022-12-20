@@ -8,7 +8,10 @@
     <form action="/sell" method="post">
         <div class="mb-3">
             <select name="symbol" class="form-control mx-auto w-auto">
-                <option value="volvo">Volvo</option>
+                <option disabled default>Choose Stock</option>
+                {% for stock in uniqueStocks %}
+                <option value="{{ stock }}">{{ stock }}</option>
+                {% endfor %}
               </select>
         </div>
         <div class="mb-3">
