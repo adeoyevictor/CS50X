@@ -50,7 +50,14 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
-    
+    if request.method == "GET":
+        return render_template("buy.html")
+    else:
+        symbol = request.form.get("symbol")
+        result = lookup(symbol)
+        if result:
+            return render_template("quoted.html", result=result)
+    return apology("Lookup unsuccessful", 403)
     return apology("TODO")
 
 
