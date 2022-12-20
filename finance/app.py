@@ -183,6 +183,10 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "GET":
-        return render_template("sell.html")
+        stocks = db.execute("SELECT * FROM stocks WHERE user_id=?", session["user_id"])
+        uniqueStocks = set()
+        for stock in stocks:
+            uniqueStocks.add(stock["stock"])
+        return render_template("sell.html", uniqueStocks=uniqueStocks)
     else:
-        
+        return apology("TODO")
