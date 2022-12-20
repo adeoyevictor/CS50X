@@ -54,6 +54,9 @@ def buy():
         return render_template("buy.html")
     else:
         symbol = request.form.get("symbol")
+        shares = request.form.get("shares")
+        if shares <= 0:
+            return apology("Invalid shares", 403)
         result = lookup(symbol)
         if result:
             return render_template("quoted.html", result=result)
