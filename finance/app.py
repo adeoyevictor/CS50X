@@ -64,7 +64,8 @@ def buy():
             return apology("Invalid shares", 403)
         cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
         if cash < (shares * result.price):
-
+            return apology("Not enough cash", 403)
+        
 
         return redirect("/")
 
