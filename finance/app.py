@@ -82,10 +82,10 @@ def buy():
         # track purchase
         curr = db.execute("SELECT shares FROM stocks WHERE stock=?" symbol)
 
-        
-
-
-        db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)", session["user_id"], symbol, result["price"], shares)
+        if not curr:
+            db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)", session["user_id"], symbol, result["price"], shares)
+        else:
+            db.execute("UPDATE stocks SET shares =? WHERE stock =?", curr[]+shares, symbol)
         # update cash
         db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] - (amount), session["user_id"])
         return redirect("/")
