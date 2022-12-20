@@ -48,7 +48,15 @@ def index():
     for stock in stocks:
         currentPrice = lookup(stock["stock"])["price"]
         stock["currentPrice"] = currentPrice
-    return render_template("index.html", stocks=stocks, cash=cash)
+    totalStock = 0
+    for stock in stocks:
+        currentPrice = lookup(stock["stock"])["price"]
+        shares = stock["shares"]
+        amount = currentPrice * shares
+        totalStock += amount
+
+
+    return render_template("index.html", stocks=stocks, cash=cash, totalStock=totalStock)
 
 
 @app.route("/buy", methods=["GET", "POST"])
