@@ -111,12 +111,12 @@ def logout():
 @login_required
 def quote():
     """Get stock quote."""
-    if request.method = "GET":
+    if request.method == "GET":
         return render_template("quote.html")
     else:
         symbol = request.form.get("symbol")
         result = lookup(symbol)
-        if result not None:
+        if result != None:
             return render_template("quoted.html", result=result)
     return apology("Lookup unsuccessful", 403)
 
