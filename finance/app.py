@@ -192,6 +192,7 @@ def sell():
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
         stock = db.execute("SELECT * FROM stocks WHERE stock = ? AND user_id=?", symbol, session["user_id"])
+        
         if not symbol:
             return apology("Please Choose Stock")
 
