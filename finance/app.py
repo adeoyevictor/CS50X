@@ -69,12 +69,7 @@ def buy():
         db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)", session["user_id"], symbol, result.price, shares)
         # update cash
         db.execute("UPDATE users SET cash =? WHERE id=?", cash - (shares * result.price), session["user_id"])
-
-
         return redirect("/")
-
-
-    return apology("Unsuccessful", 403)
 
 
 @app.route("/history")
