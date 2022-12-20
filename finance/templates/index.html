@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block main %}
-<table class="table">
+<table class="table mb-5">
     <thead>
         <tr>
             <th>Stock</th>
@@ -21,6 +21,24 @@
             <th>{{ stock.shares }}</th>
             <th>{{ stock.currentPrice }}</th>
             <th>{{ stock.currentPrice * stock.shares }}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cash Balance</th>
+            <th>Stocks Total Value</th>
+            <th>Grand Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in stocks %}
+        <tr>
+            <th>{{ stock.stock }}</th>
+            <th>{{ stock.shares }}</th>
+            <th>{{ stock.currentPrice }}</th>
         </tr>
         {% endfor %}
     </tbody>
