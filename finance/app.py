@@ -116,7 +116,7 @@ def quote():
     else:
         symbol = request.form.get("symbol")
         result = lookup(symbol)
-        if result != None:
+        if result:
             return render_template("quoted.html", result=result)
     return apology("Lookup unsuccessful", 403)
 
