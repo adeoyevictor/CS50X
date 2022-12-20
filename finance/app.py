@@ -191,6 +191,7 @@ def sell():
     else:
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
+        
         if not symbol:
             return apology("Please Choose Stock")
 
