@@ -60,6 +60,7 @@ def buy():
         result = lookup(symbol)
         if result:
             cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
+            if cash < (shares * result.price):
 
     return apology("Unsuccessful", 403)
 
