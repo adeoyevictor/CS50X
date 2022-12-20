@@ -189,4 +189,9 @@ def sell():
             uniqueStocks.add(stock["stock"])
         return render_template("sell.html", uniqueStocks=uniqueStocks)
     else:
+        symbol = request.form.get("symbol")
+        shares = request.form.get("shares")
+        if not symbol:
+            return apology("Please Choose Stock")
+
         return apology("TODO")
