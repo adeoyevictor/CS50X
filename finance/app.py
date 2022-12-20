@@ -68,7 +68,7 @@ def buy():
         # track purchase
         db.execute("INSERT INTO stocks")
         # update cash
-        db.execute("UPDATE users")
+        db.execute("UPDATE users SET cash =? WHERE id=?", )
 
 
         return redirect("/")
