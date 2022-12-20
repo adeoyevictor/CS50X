@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Stock</th>
+            <th>No. of Shares</th>
+            <th>Current Price</th>
+            <th>Total Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in stocks %}
+        <tr>
+            <th>{{ stock.stock }}</th>
+            <th>{{ stock.shares }}</th>
+            <th>{{ stock.currentPrice }}</th>
+            <th>{{ stock.currentPrice * stock.shares }}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
