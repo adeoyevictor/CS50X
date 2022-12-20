@@ -80,6 +80,7 @@ def buy():
         if cash[0]["cash"] < amount:
             return apology("Not enough cash", 403)
         # track purchase
+        
         db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)", session["user_id"], symbol, result["price"], shares)
         # update cash
         db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] - (amount), session["user_id"])
@@ -192,7 +193,7 @@ def sell():
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
         stock = db.execute("SELECT * FROM stocks WHERE stock = ? AND user_id=?", symbol, session["user_id"])
-        
+
         if not symbol:
             return apology("Please Choose Stock")
 
