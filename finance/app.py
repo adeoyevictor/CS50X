@@ -63,7 +63,8 @@ def buy():
         if not shares or int(shares) <= 0:
             return apology("Invalid shares", 403)
         cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
-        if cash < ((int)shares * result["price"]):
+        amount = int(shares) * float(result["price"])
+        if cash < amount:
             return apology("Not enough cash", 403)
         # track purchase
         db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)", session["user_id"], symbol, result.price, shares)
