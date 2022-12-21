@@ -171,7 +171,7 @@ def register():
 
         username_list = []
 
-        for i in usernames:
+        for i in range(len(usernames)):
             username_list.append(usernames[i]["username"])
 
         username = request.form.get("username")
