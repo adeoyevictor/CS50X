@@ -237,6 +237,3 @@ def sell():
                    session["user_id"], "sell", symbol, current_price, shares)
 
         return redirect("/")
-
-
-
