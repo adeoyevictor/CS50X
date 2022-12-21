@@ -207,6 +207,8 @@ def sell():
         current_price = lookup(symbol)["price"]
         selling_price = current_price * int(shares)
 
-        db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] - (amount), session["user_id"])
+        cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
+
+        db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] + selling_price, session["user_id"])
 
 
