@@ -54,8 +54,6 @@ def index():
         shares = stock["shares"]
         amount = currentPrice * shares
         totalStock += amount
-
-
     return render_template("index.html", stocks=stocks, cash=cash, totalStock=totalStock)
 
 
@@ -73,7 +71,7 @@ def buy():
         result = lookup(symbol)
 
         if result == None:
-             return apology("Invalid Symbol", 400)
+            return apology("Invalid Symbol", 400)
 
         if shares < 0:
             return apology("Invalid shares", 400)
@@ -86,11 +84,13 @@ def buy():
         curr = db.execute("SELECT shares FROM stocks WHERE stock=?", symbol)
 
         if not curr:
-            db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)", session["user_id"], symbol, result["price"], shares)
+            db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)",
+                       session["user_id"], symbol, result["price"], shares)
         else:
             db.execute("UPDATE stocks SET shares =? WHERE stock =?", curr[0]["shares"] + int(shares), symbol)
         # update cash
-        db.execute("INSERT INTO transactions (user_id, type, stock, price, shares) VALUES(?,?,?,?,?)", session["user_id"], "buy", symbol, result["price"], shares)
+        db.execute("INSERT INTO transactions (user_id, type, stock, price, shares) VALUES(?,?,?,?,?)",
+                   session["user_id"], "buy", symbol, result["price"], shares)
         db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] - (amount), session["user_id"])
         return redirect("/")
 
@@ -194,10 +194,12 @@ def register():
         elif password != confirmation:
             return apology("password and confirmation must be the same")
         else:
-            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, generate_password_hash(password, method='pbkdf2:sha256', salt_length=8))
+            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username,
+                       generate_password_hash(password, method='pbkdf2:sha256', salt_length=8))
             user = db.execute("SELECT id FROM users WHERE username=?", username)
             session["user_id"] = user[0]["id"]
             return redirect("/")
+
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
@@ -218,7 +220,7 @@ def sell():
             return apology("Please Choose Stock and Shares")
 
         if len(stock) == 0 or stock[0]["shares"] < int(shares):
-             return apology("Stock not available or enough")
+            return apology("Stock not available or enough")
 
         current_price = lookup(symbol)["price"]
         selling_price = current_price * int(shares)
@@ -229,9 +231,10 @@ def sell():
 
         share = db.execute("SELECT shares FROM stocks WHERE user_id =? AND stock=?", session["user_id"], symbol)
 
-
-        db.execute("UPDATE stocks SET shares =? WHERE user_id=? AND stock=?", share[0]["shares"] - int(shares), session["user_id"], symbol)
-        db.execute("INSERT INTO transactions (user_id, type, stock, price, shares) VALUES(?,?,?,?,?)", session["user_id"], "sell", symbol, current_price, shares)
+        db.execute("UPDATE stocks SET shares =? WHERE user_id=? AND stock=?",
+                   share[0]["shares"] - int(shares), session["user_id"], symbol)
+        db.execute("INSERT INTO transactions (user_id, type, stock, price, shares) VALUES(?,?,?,?,?)",
+                   session["user_id"], "sell", symbol, current_price, shares)
 
         return redirect("/")
 
