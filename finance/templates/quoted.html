@@ -16,7 +16,7 @@
         <tbody>
             <tr>
                 <th>{{ result.name }}</th>
-                <th>{{ usd(result.price) }}</th>
+                <th>{{ result.price | usd }}</th>
                 <th>{{ result.symbol }}</th>
             </tr>
         </tbody>
