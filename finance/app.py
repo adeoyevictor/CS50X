@@ -168,6 +168,12 @@ def register():
         return render_template("register.html")
     else:
         usernames = db.execute("SELECT username FROM users")
+
+        username_list = []
+
+        for i in usernames:
+            username_list.append
+
         username = request.form.get("username")
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
@@ -182,7 +188,7 @@ def register():
         else:
             db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, generate_password_hash(password, method='pbkdf2:sha256', salt_length=8))
             user = db.execute("SELECT id FROM users WHERE username=?", username)
-            session["user_id"] = user["id"]
+            session["user_id"] = user[0]["id"]
             return redirect("/")
 
 @app.route("/sell", methods=["GET", "POST"])
