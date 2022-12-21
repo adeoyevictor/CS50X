@@ -216,6 +216,7 @@ def sell():
 
 
         db.execute("UPDATE stocks SET shares =? WHERE user_id=? AND stock=?", share[0]["shares"] - int(shares), session["user_id"], symbol)
+        db.execute("INSERT INTO transactions (user_id, type, stock, price, shares) VALUES(?,?,?,?,?)", session["user_id"], "sell", symbol, current_price, shares)
 
         return redirect("/")
 
