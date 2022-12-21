@@ -20,7 +20,7 @@
             <th>{{ stock.stock }}</th>
             <th>{{ stock.shares }}</th>
             <th>{{ stock.currentPrice | usd }}</th>
-            <th>{{ stock.currentPrice * stock.shares | usd }}</th>
+            <th>{{ stock.currentPrice * stock.shares  }}</th>
         </tr>
         {% endfor %}
     </tbody>
@@ -37,7 +37,7 @@
         <tr>
             <th>{{ cash[0]["cash"] | usd }}</th>
             <th>{{ totalStock | usd }}</th>
-            <th>{{ cash[0]["cash"] + totalStock | usd }}</th>
+            <th>{{ cash[0]["cash"] + totalStock }}</th>
         </tr>
     </tbody>
 </table>
