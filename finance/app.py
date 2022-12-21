@@ -87,6 +87,7 @@ def buy():
         else:
             db.execute("UPDATE stocks SET shares =? WHERE stock =?", curr[0]["shares"] + int(shares), symbol)
         # update cash
+        db.execute("INSERT INTO transactions (user_id, type, stock, price, shares) VALUES(?,?,?,?,?)", session["user_id"], "buy", symbol, result["price"], shares)
         db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] - (amount), session["user_id"])
         return redirect("/")
 
