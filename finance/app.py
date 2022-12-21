@@ -211,10 +211,10 @@ def sell():
 
         db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] + selling_price, session["user_id"])
 
-        shares = db.execute("SELECT shares FROM stocks WHERE user_id =? AND stock=?", session["user_id"], symbol)
+        share = db.execute("SELECT shares FROM stocks WHERE user_id =? AND stock=?", session["user_id"], symbol)
 
 
-        db.execute("UPDATE stocks SET shares =? WHERE user_id=? AND stock=?", shares[0]["shares"] - int(shares), session["user_id"], symbol)
+        db.execute("UPDATE stocks SET shares =? WHERE user_id=? AND stock=?", share[0]["shares"] - int(shares), session["user_id"], symbol)
 
         return redirect("/")
 
