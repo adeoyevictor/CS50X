@@ -80,7 +80,7 @@ def buy():
         if cash[0]["cash"] < amount:
             return apology("Not enough cash", 403)
         # track purchase
-        curr = db.execute("SELECT shares FROM stocks WHERE stock=?" symbol)
+        curr = db.execute("SELECT shares FROM stocks WHERE stock=?", symbol)
 
         if not curr:
             db.execute("INSERT INTO stocks (user_id, stock, price, shares) VALUES(?, ?, ?, ?)", session["user_id"], symbol, result["price"], shares)
