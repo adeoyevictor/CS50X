@@ -67,14 +67,14 @@ def buy():
         return render_template("buy.html")
     else:
         symbol = request.form.get("symbol")
-        if not symbol:
-            return apology("Input Symbol", 400)
+        shares = request.form.get("shares")
+        if not symbol or not shares:
+            return apology("Input Symbol and Shares", 400)
         result = lookup(symbol)
         if not result:
              return apology("Invalid Symbol", 400)
-        shares = request.form.get("shares")
 
-        if not shares or int(shares) <= 0:
+        if int(shares) <= 0:
             return apology("Invalid shares", 400)
         cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
         amount = int(shares) * float(result["price"])
