@@ -179,7 +179,7 @@ def register():
         confirmation = request.form.get("confirmation")
         if not username:
             return apology("must provide username", 400)
-        elif username in usernames["username"]:
+        elif username in username_list:
             return apology("username already exists", 400)
         elif not password or not confirmation:
             return apology("Please input password and confirmation", 400)
