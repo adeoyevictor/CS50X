@@ -158,7 +158,7 @@ def quote():
         result = lookup(symbol)
         if result:
             return render_template("quoted.html", result=result)
-    return apology("Lookup unsuccessful", 403)
+    return apology("Lookup unsuccessful", 400)
 
 
 @app.route("/register", methods=["GET", "POST"])
