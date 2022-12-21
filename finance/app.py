@@ -72,9 +72,7 @@ def buy():
         result = lookup(symbol)
         if not result:
              return apology("Invalid Symbol", 400)
-        shares = int(request.form.get("shares"))
-        if type(shares) not int:
-            return apology("Invalid shares", 400)
+        shares = request.form.get("shares")
 
         if not shares or int(shares) < 1:
             return apology("Invalid shares", 400)
