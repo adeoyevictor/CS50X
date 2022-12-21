@@ -73,6 +73,7 @@ def buy():
         if not result:
              return apology("Invalid Symbol", 400)
         shares = int(request.form.get("shares"))
+        
         if not shares or int(shares) < 1:
             return apology("Invalid shares", 400)
         cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
