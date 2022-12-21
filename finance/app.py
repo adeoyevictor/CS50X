@@ -201,6 +201,7 @@ def sell():
         if not symbol:
             return apology("Please Choose Stock")
 
-        if len(stock) == 0:
+        if len(stock) == 0 or stock[0]["shares"]:
+             return apology("Stock not available")
 
         return apology("TODO")
