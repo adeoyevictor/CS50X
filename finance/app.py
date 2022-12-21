@@ -68,17 +68,17 @@ def buy():
     else:
         symbol = request.form.get("symbol")
         if not symbol:
-            return apology("Input Symbol", 403)
+            return apology("Input Symbol", 400)
         result = lookup(symbol)
         if not result:
-             return apology("Invalid Symbol", 403)
+             return apology("Invalid Symbol", 400)
         shares = request.form.get("shares")
         if not shares or int(shares) <= 0:
-            return apology("Invalid shares", 403)
+            return apology("Invalid shares", 400)
         cash = db.execute("SELECT cash FROM users WHERE id =?", session["user_id"])
         amount = int(shares) * float(result["price"])
         if cash[0]["cash"] < amount:
-            return apology("Not enough cash", 403)
+            return apology("Not enough cash", 400)
         # track purchase
         curr = db.execute("SELECT shares FROM stocks WHERE stock=?", symbol)
 
@@ -155,7 +155,6 @@ def quote():
         return render_template("quote.html")
     else:
         symbol = request.form.get("symbol")
-        
         result = lookup(symbol)
         if result:
             return render_template("quoted.html", result=result)
