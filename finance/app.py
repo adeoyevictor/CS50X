@@ -155,10 +155,15 @@ def quote():
         return render_template("quote.html")
     else:
         symbol = request.form.get("symbol")
+        if not symbol:
+            return apology("Input Symbol", 400)
         result = lookup(symbol)
-        if result:
+        if result is None:
+            return apology("Invalid Symbol", 400)
+        else:
             return render_template("quoted.html", result=result)
-    return apology("Lookup unsuccessful", 400)
+
+    # return apology("Lookup unsuccessful", 400)
 
 
 @app.route("/register", methods=["GET", "POST"])
