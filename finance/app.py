@@ -155,6 +155,7 @@ def quote():
         return render_template("quote.html")
     else:
         symbol = request.form.get("symbol")
+        
         result = lookup(symbol)
         if result:
             return render_template("quoted.html", result=result)
