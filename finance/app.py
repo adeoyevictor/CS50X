@@ -211,4 +211,7 @@ def sell():
 
         db.execute("UPDATE users SET cash =? WHERE id=?", cash[0]["cash"] + selling_price, session["user_id"])
 
+        db.execute("UPDATE stocks SET cash =? WHERE id=?", cash[0]["cash"] + selling_price, session["user_id"])
+
+
 
