@@ -204,3 +204,6 @@ def sell():
         if len(stock) == 0 or stock[0]["shares"] < int(shares):
              return apology("Stock not available or enough")
 
+        current_price = lookup(symbol)["price"]
+        
+
