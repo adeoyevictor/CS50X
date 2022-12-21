@@ -181,7 +181,7 @@ def register():
             return apology("password and confirmation must be the same")
         else:
             db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, generate_password_hash(password, method='pbkdf2:sha256', salt_length=8))
-            user_id = db.execute("SELECT id FROM users WHERE username=?", username)
+            user = db.execute("SELECT id FROM users WHERE username=?", username)
             session["user_id"] = user_id
             return redirect("/")
 
