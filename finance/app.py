@@ -205,5 +205,6 @@ def sell():
              return apology("Stock not available or enough")
 
         current_price = lookup(symbol)["price"]
-        selling_price = current_price *
+        selling_price = current_price * int(shares)
+        
 
