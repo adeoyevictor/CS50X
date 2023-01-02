@@ -1,7 +1,7 @@
 def main():
     time = input("What time is it? ")
     time = convert(time)
-    print(time)
+    if time
 
 
 
