@@ -6,10 +6,11 @@ x = float(x)
 z = float(z)
 
 if y == "+":
-    print(x + y)
+    print(f"{(x + z):.1f}")
 elif y == "-":
-    print(x - y)
+    print(f"{(x - z):.1f}")
 elif y == "*":
-    print(x * y)
+    print(f"{(x * z):.1f}")
 elif y == "/":
-    print(x / y)
+    print(f"{(x / z):.1f}")
+
