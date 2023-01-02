@@ -1,2 +1,4 @@
-text = input("Greeting: ")
+text = input("Greeting: ").strip().lower()
+
+if text 
 
