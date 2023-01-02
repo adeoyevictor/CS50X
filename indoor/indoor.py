@@ -1,3 +1,3 @@
-text = input("Enter a String, ")
+text = input("Enter a String: ")
 
 print(text.lower())
