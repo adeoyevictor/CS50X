@@ -5,7 +5,6 @@ def convert(text):
 
 def main():
     text = input("Enter a text: ")
-
     print(convert(text))
 
 main()
