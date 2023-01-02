@@ -1,6 +1,6 @@
 def covert(text):
-    result = text.replace(":)", "")
-    result = text.replace(":(", "")
+    result = text.replace(":)", "🙂")
+    result = text.replace(":(", "🙁")
     return result
 
 
