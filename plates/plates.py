@@ -10,6 +10,7 @@ def is_valid(s):
     nums = []
     if len(s) > 6 or len(s) < 2:
         return False
+    print(s[:2])
     if not s[:2].isalpha():
         return False
     for c in s:
