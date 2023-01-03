@@ -20,7 +20,6 @@ def is_valid(s):
             nums += [int(c)]
     if len(nums) >= 1 and nums[0] == 0:
         return False
-
     return True
 
 
