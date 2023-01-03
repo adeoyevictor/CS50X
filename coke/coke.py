@@ -4,7 +4,10 @@ while True:
     print("Amount Due:", 50 - amount)
     try:
         x = int(input("Insert Coin: "))
-        amount += x
+        if x in [25, 10, 5]:
+            amount += x
+        else:
+            continue
     except:
         pass
     if amount >= 50:
