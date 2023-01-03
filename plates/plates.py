@@ -7,6 +7,7 @@ def main():
 
 
 def is_valid(s):
+    nums = []
     if len(s) > 6 or len(s) < 2:
         return False
     if not s[:2].isalpha():
@@ -16,7 +17,15 @@ def is_valid(s):
             pass
         else:
             return False
-    
+    for c in s:
+        if c.isnumeric():
+            nums += [int(c)]
+
+
+
+
+    print(nums)
+
     return True
 
 
