@@ -11,6 +11,11 @@ def is_valid(s):
         return False
     if not s[:2].isalpha():
         return False
+    for c in s:
+        if c.isalpha() or c.isnumeric():
+            pass
+        else:
+            return False
 
 
 
