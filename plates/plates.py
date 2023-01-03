@@ -15,8 +15,8 @@ def is_valid(s):
         if c in [' ', '.', '!', '?']:
             return False
     # nums = []
-    # for c in s:
-    #     if c.isnumeric():
+    for c in s:
+        if c.isnumeric():
     #         nums += [int(c)]
     # if len(nums) >= 1 and nums[0] == 0:
     #     return False
