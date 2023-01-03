@@ -22,7 +22,7 @@ def is_valid(s):
         return False
     # print(s[-len(nums):])
     if len(nums) >= 1:
-        if not s[-len(nums):].isalpha():
+        if not s[-len(nums):].isnumeric():
             return False
     return True
 
