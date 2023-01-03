@@ -1,6 +1,8 @@
 text = input("camelCase: ")
 
 for c in text:
-    if 
-    print(c.lower(), end="")
+    if c.islower():
+        print(c.lower(), end="")
+    else:
+        print(f"_{c.lower()}", end="")
 print()
