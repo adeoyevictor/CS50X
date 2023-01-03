@@ -20,6 +20,8 @@ def is_valid(s):
     for c in s:
         if c.isnumeric():
             nums += [int(c)]
+    if len(nums) >= 1 and nums[0] == 0:
+        return False
 
 
 
