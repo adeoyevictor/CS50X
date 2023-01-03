@@ -12,10 +12,10 @@ def is_valid(s):
     if len(s) > 6 or len(s) < 2:
         return False
     for c in s:
-        if not c.isalpha() or c.isnumeric():
+        if c in [' ', '.', '!', '?']:
             return False
 
-# 
+#
     nums = []
     for c in s:
         if c.isnumeric():
