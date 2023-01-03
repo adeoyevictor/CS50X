@@ -23,7 +23,7 @@ def is_valid(s):
             nums += [int(c)]
     if len(nums) >= 1 and nums[0] == 0:
         return False
-    print(s[-len(nums):])
+    # print(s[-len(nums):])
     if len(nums) >= 1:
         if not s[-len(nums):].isalpha():
             return False
