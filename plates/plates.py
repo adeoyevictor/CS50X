@@ -22,7 +22,10 @@ def is_valid(s):
             nums += [int(c)]
     if len(nums) >= 1 and nums[0] == 0:
         return False
-    if len(nums) >= 1:
+    print(s[-len(nums):])
+    # if len(nums) >= 1:
+        # if s[-len(nums):]
+
 
 
 
