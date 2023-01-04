@@ -13,11 +13,13 @@ total = 0
 while True:
     try:
         item = input("Item: ").title()
+
         total += d[item]
     except KeyError:
         pass
     except EOFError:
         break
+    
 if total == 0:
     print()
 else:
