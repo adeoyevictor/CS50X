@@ -4,5 +4,6 @@ while True:
         x = int(text[:1])
         y = int(text[2:])
         break
-    except ValueError:
+    except (ValueError,  ZeroDivisionError):
         pass
+
