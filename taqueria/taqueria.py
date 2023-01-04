@@ -17,6 +17,6 @@ while True:
     except KeyError:
         pass
     except EOFError:
-        print()
-        print(f"${round(total, 2)}")
         break
+
+print(f"${round(total, 2)}")
