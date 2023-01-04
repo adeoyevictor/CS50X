@@ -12,6 +12,7 @@ def is_valid(s):
             if s[i].isnumeric():
                 if s[i] != '0' and s[i:].isnumeric():
                     return True
+                break
     return False
 
 
