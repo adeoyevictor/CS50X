@@ -1,8 +1,8 @@
 while True:
     try:
-        text = input("Fraction: ")
-        x = int(text[:1])
-        y = int(text[2:])
+        x , y = input("Fraction: ").split("/")
+        x = int(x)
+        y = int(y)
         percent =  int((x / y) * 100)
         if percent <= 1:
             print("E")
