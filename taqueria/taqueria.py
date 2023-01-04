@@ -21,5 +21,5 @@ while True:
 if total == 0:
     print()
 else:
-    print()
-    print(f"Total: ${round(total, 2)}")
+    # print()
+    print(f"${round(total, 2)}")
