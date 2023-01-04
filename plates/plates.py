@@ -7,12 +7,8 @@ def main():
 
 
 def is_valid(s):
-    if s[:2].isalpha() and s.isalnum():
-        if len(s) >= 2 and len(s) <=6:
-            for c in s[2:]:
-                if c.isnumeric():
-
-            # return True
+    if s[:2].isalpha() and s.isalnum() and len(s) >= 2 and len(s) <=6:
+        return True
     return False
 
 
