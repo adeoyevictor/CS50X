@@ -21,8 +21,7 @@ fruits = {
     "watermelon": 80,
 }
 
-text = input("Item: ")
+text = input("Item: ").lower()
 
-if text.lower() in fruits:
+if text in fruits:
     print("Calories:", fruits[text])
-    
