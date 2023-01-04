@@ -3,7 +3,7 @@ while True:
         x , y = input("Fraction: ").split("/")
         x = int(x)
         y = int(y)
-        percent =  int((x / y) * 100)
+        percent =  round((x / y) * 100)
         if percent <= 1:
             print("E")
         elif percent >= 99:
