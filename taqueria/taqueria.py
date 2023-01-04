@@ -11,4 +11,9 @@
 }
 
 while True:
-    item = input("Item: ")
+    try:
+        item = input("Item: ")
+    except EOFError:
+        print()
+        print("done")
+        break
