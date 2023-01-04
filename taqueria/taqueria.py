@@ -16,7 +16,7 @@ while True:
     try:
         item = input("Item: ").title()
         total += d[item]
-    except (EOFError, ):
+    except (EOFError, KeyError):
         print()
         print(f"${round(total, 2)}")
         break
