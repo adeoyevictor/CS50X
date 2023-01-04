@@ -10,13 +10,9 @@ def is_valid(s):
     if s[:2].isalpha() and s.isalnum() and len(s) >= 2 and len(s) <=6:
         for i in range(len(s)):
             if s[i].isnumeric():
-                print("numeric")
-                print(s[i])
+                print(s[i:])
+                if s[i] == '0'
                 break
-            else:
-                pass
-                # print("not numeric")
-                # print(s[i])
     return False
 
 
