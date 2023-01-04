@@ -16,6 +16,5 @@ while True:
         items += [item]
     except EOFError:
         break
-for item in items:
-    print(item)
+
 # print(f"${round(total, 2)}")
