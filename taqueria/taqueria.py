@@ -9,12 +9,14 @@ d = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-
+total = 0
 while True:
     try:
         item = input("Item: ").title()
         total += d[item]
-    except (EOFError, KeyError):
+    except KeyError:
+        pass
+    except EOFError:
         print()
         print(f"${round(total, 2)}")
         break
