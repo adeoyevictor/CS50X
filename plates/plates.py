@@ -11,8 +11,9 @@ def is_valid(s):
         return False
     if len(s) > 6 or len(s) < 2:
         return False
-    if not c.isalnum():
-        return False
+    for c in s:
+        if not c.isalpha() or c.isnumeric():
+            return False
     return True
 
 
