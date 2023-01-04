@@ -1,4 +1,4 @@
-{
+d = {
     "Baja Taco": 4.00,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -10,10 +10,13 @@
     "Tortilla Salad": 8.00
 }
 
+total = 0
+
 while True:
     try:
-        item = input("Item: ")
+        item = input("Item: ").title()
+        total += d[item]
     except EOFError:
         print()
-        print("done")
+        print(total)
         break
