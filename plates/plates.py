@@ -14,8 +14,9 @@ def is_valid(s):
                 print(s[i])
                 break
             else:
-                print("not numeric")
-                print(s[i])
+                pass
+                # print("not numeric")
+                # print(s[i])
     return False
 
 
