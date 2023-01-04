@@ -11,8 +11,9 @@ def is_valid(s):
         for i in range(len(s)):
             if s[i].isnumeric():
                 print(s[i:])
-                if s[i] == '0'
-                break
+                if s[i] != '0' and s[i:].isnumeric():
+                    return True
+                # break
     return False
 
 
