@@ -17,4 +17,10 @@ while True:
     except EOFError:
         break
 
+for item in items:
+    total = 0
+    try:
+        total += d[item]
+    except KeyError:
+        pass
 # print(f"${round(total, 2)}")
