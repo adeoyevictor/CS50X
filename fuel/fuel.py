@@ -15,4 +15,3 @@ while True:
         break
     except (ValueError,  ZeroDivisionError):
         pass
-
