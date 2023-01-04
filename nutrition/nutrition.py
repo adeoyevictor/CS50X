@@ -25,3 +25,4 @@ text = input("Item: ")
 
 if text.lower() in fruits:
     print("Calories:", fruits[text])
+    
