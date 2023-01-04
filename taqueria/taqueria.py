@@ -18,5 +18,8 @@ while True:
         pass
     except EOFError:
         break
-
-print(f"${round(total, 2)}")
+if total == 0:
+    print()
+else:
+    print()
+    print(f"Total: ${round(total, 2)}")
