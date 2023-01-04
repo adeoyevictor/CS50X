@@ -16,6 +16,8 @@ def is_valid(s):
                 return True
         if s[idx] == 0:
             return False
+        if s[idx:].isnumeric():
+            return True
     return False
 
 
