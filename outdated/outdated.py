@@ -16,7 +16,6 @@ months = [
 def main():
     while True:
         dt = input("Date: ")
-
         if '/' in dt:
             month, day, year = dt.split('/')
             frmt(year, month, day)
