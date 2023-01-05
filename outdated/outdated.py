@@ -20,4 +20,5 @@ if '/' in dt:
 elif ',' in dt:
     month, day, year = dt.split(' ')
     day = day[:-1]
+    
 
