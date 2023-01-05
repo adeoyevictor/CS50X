@@ -15,6 +15,7 @@ while True:
         item = input("Item: ").title()
         items += [item]
     except EOFError:
+        print()
         break
 
 total = 0
