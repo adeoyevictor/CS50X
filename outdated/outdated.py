@@ -26,7 +26,8 @@ def main():
             for i in range(len(months)):
                 if month == months[i]:
                     month = i + 1
-            frmt(year, month, day)
+                    frmt(year, month, day)
+
         else:
             pass
 
