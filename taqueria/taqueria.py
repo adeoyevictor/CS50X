@@ -14,7 +14,7 @@ while True:
     try:
         item = input("Item: ").title()
         total += d[item]
-        print(f"Total: ${round(total, 2)}")
+        print(f"Total: ${total:.2f}")
     except EOFError:
         print()
         break
