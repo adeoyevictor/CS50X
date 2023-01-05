@@ -15,5 +15,7 @@ months = [
 
 dt = input("Date: ")
 
-for char in dt:
-    print(char, sep="#")
+if '/' in dt:
+    month, day, year = dt.split('/')
+elif ',' in dt:
+
