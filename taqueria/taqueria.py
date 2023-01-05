@@ -17,8 +17,8 @@ while True:
     except EOFError:
         break
 
+total = 0
 for item in items:
-    total = 0
     try:
         total += d[item]
     except KeyError:
