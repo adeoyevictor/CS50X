@@ -18,10 +18,10 @@ while True:
         print()
         break
 
-total = 0
+total = None
 for item in items:
     try:
         total += d[item]
     except KeyError:
         pass
-# print(f"${round(total, 2)}")
+print(f"${round(total, 2)}")
