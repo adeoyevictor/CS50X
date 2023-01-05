@@ -22,7 +22,9 @@ def main():
     elif ',' in dt:
         month, day, year = dt.split(' ')
         day = day[:-1]
-        
+        for i in range(len(months)):
+            if months[i] == month.capitalize():
+                month = i + 1
         frmt(year, month, day)
 
 def frmt(year, month, day):
