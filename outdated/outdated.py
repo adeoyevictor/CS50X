@@ -22,6 +22,7 @@ def main():
     elif ',' in dt:
         month, day, year = dt.split(' ')
         day = day[:-1]
+        
         frmt(year, month, day)
 
 def frmt(year, month, day):
