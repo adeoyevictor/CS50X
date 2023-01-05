@@ -11,5 +11,8 @@ while True:
         print()
         break
 
+
+dict(sorted(lst.items()))
+
 for item in lst:
     print(item)
