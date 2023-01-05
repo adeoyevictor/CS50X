@@ -14,3 +14,6 @@ months = [
 ]
 
 dt = input("Date: ")
+
+for char in dt:
+    print(char, sep="#")
