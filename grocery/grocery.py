@@ -2,7 +2,7 @@ lst = {}
 
 while True:
     try:
-        item = input("Item: ").upper()
+        item = input().upper()
         if item in lst:
             lst[item] += 1
         else:
