@@ -9,19 +9,13 @@ d = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-items = []
+total = 0
 while True:
     try:
         item = input("Item: ").title()
-        items += [item]
-    except EOFError:
-        print()
-        break
-
-total = 0
-for item in items:
-    try:
         total += d[item]
+        print(f"Total: ${round(total, 2)}")
+    except EOFError:
+        break
     except KeyError:
         pass
-print(f"Total: ${round(total, 2)}")
