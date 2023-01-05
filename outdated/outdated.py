@@ -18,4 +18,6 @@ dt = input("Date: ")
 if '/' in dt:
     month, day, year = dt.split('/')
 elif ',' in dt:
+    month, day, year = dt.split(' ')
+    day = day[:-1]
 
