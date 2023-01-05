@@ -23,9 +23,10 @@ def main():
         month, day, year = dt.split(' ')
         day = day[:-1]
         for i in range(len(months)):
-            if months[i] == month.capitalize():
+            if month.capitalize() == months[i]:
                 month = i + 1
-        frmt(year, month, day)
+        # frmt(year, month, day)
+        print(year, month, day)
 
 def frmt(year, month, day):
     print(year, month, day, sep="-")
