@@ -16,6 +16,7 @@ while True:
         total += d[item]
         print(f"Total: ${round(total, 2)}")
     except EOFError:
+        print()
         break
     except KeyError:
         pass
