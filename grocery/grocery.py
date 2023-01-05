@@ -15,4 +15,4 @@ while True:
 dict(sorted(lst.items()))
 
 for item in dict(sorted(lst.items())):
-    print(item)
+    print(lst[item], item)
