@@ -24,7 +24,8 @@ def main():
         else:
             break
         try:
-            month, day, year = dt.split(' ')
+            month_day, year = dt.split(', ')
+            month, day = month_day.split(' ')
             month = month.capitalize()
             day = day[:-1]
             for i in range(len(months)):
