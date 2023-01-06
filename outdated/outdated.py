@@ -19,12 +19,15 @@ def main():
         dt = input("Date: ").strip()
         try:
             month, day, year = dt.split('/')
+            month = int(month)
+            day = int(day)
+            year = int(year)
         except:
             pass
         else:
-            if int(day) > 31 or int(day) < 1:
+            if day > 31 or day < 1:
                 continue
-            if int(month) > 12 or int(month) < 1:
+            if month > 12 or month < 1:
                 continue
             break
         try:
@@ -35,12 +38,15 @@ def main():
             for i in range(len(months)):
                 if month == months[i]:
                     month = i + 1
+            month = int(month)
+            day = int(day)
+            year = int(year)
         except:
             pass
         else:
-            if int(day) > 31 or int(day) < 1:
+            if day > 31 or day < 1:
                 continue
-            if int(month) > 12 or int(month) < 1:
+            if month > 12 or month < 1:
                 continue
             break
     frmt(year, month, day)
@@ -48,9 +54,9 @@ def main():
 
 
 def frmt(year, month, day):
-    if int(month) < 10:
+    if month < 10:
         month = f"0{month}"
-    if int(day) < 10:
+    if day < 10:
         day = f"0{day}"
     print(year, month, day, sep="-")
 
