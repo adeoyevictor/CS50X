@@ -13,34 +13,28 @@ months = [
     "December"
 ]
 
-#         if '/' in dt:
-#
-#             frmt(year, month, day)
-#         elif ',' in dt:
-#
-#             month = month.capitalize()
-#             day = day[:-1]
-#             for i in range(len(months)):
-#                 if month == months[i]:
-#                     month = i + 1
-#                     frmt(year, month, day)
-
-#         else:
-#             pass
-
-
 
 def main():
     while True:
+        dt = input("Date: ")
         try:
-            dt = input("Date: ")
             month, day, year = dt.split('/')
         except:
             pass
-        
+        else:
+            break
         try:
             month, day, year = dt.split(' ')
+            month = month.capitalize()
+            day = day[:-1]
+            for i in range(len(months)):
+                if month == months[i]:
+                    month = i + 1
         except:
+            pass
+        else:
+            break
+    print(month, day, year)
 
 
 
