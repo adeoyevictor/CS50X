@@ -24,6 +24,8 @@ def main():
         else:
             if int(day) > 31 or int(day) < 1:
                 continue
+            if int(month) > 12 or int(month) < 1:
+                continue
             break
         try:
             month_day, year = dt.split(', ')
@@ -38,7 +40,8 @@ def main():
         else:
             if int(day) > 31 or int(day) < 1:
                 continue
-            
+            if int(month) > 12 or int(month) < 1:
+                continue
             break
     frmt(year, month, day)
 
