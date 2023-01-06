@@ -27,7 +27,7 @@ def main():
             month_day, year = dt.split(', ')
             month, day = month_day.split(' ')
             month = month.capitalize()
-            day = day[:-1]
+            # day = day[:-1]
             for i in range(len(months)):
                 if month == months[i]:
                     month = i + 1
