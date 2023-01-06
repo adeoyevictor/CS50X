@@ -11,5 +11,6 @@ while True:
         print()
         break
 
-for name in names:
-    print(name)
+names = p.join(names)
+
+print(f"Adieu, adieu, to {names}")
