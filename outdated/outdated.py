@@ -34,6 +34,8 @@ def main():
         except:
             pass
         else:
+            if int(day) > 31 or int(day) < 1:
+                continue
             break
     frmt(year, month, day)
 
