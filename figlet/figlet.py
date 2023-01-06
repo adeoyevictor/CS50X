@@ -1,7 +1,6 @@
 import sys
 
-print(len(sys.argv))
-
+txt = input("Input: ")
 
 if len(sys.argv) == 1:
 
