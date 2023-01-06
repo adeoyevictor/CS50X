@@ -39,6 +39,10 @@ def main():
 
 
 def frmt(year, month, day):
+    if int(month) < 10:
+        month = f"0{month}"
+    if int(day) < 10:
+        day = f"0{day}"
     print(year, month, day, sep="-")
 
 main()
