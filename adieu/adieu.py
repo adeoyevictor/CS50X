@@ -1,3 +1,5 @@
+import inflect
+p = inflect.engine()
 
 names = []
 
@@ -8,6 +10,6 @@ while True:
     except EOFError:
         print()
         break
-    
+
 for name in names:
     print(name)
