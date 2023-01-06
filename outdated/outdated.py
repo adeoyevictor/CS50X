@@ -16,7 +16,7 @@ months = [
 
 def main():
     while True:
-        dt = input("Date: ")
+        dt = input("Date: ").strip()
         try:
             month, day, year = dt.split('/')
         except:
