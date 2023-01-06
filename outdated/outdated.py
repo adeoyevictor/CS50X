@@ -34,11 +34,11 @@ def main():
             pass
         else:
             break
-    print(month, day, year)
+    frmt(year, month, day)
 
 
 
-# def frmt(year, month, day):
-#     print(year, month, day, sep="-")
+def frmt(year, month, day):
+    print(year, month, day, sep="-")
 
 main()
