@@ -3,9 +3,9 @@ def main():
 
 
 def convert(fraction):
-    try:
         x, y = fraction.split("/")
-
+        x = int(x)
+        y = int(y)
 
 
 def gauge(percentage):
