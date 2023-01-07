@@ -4,7 +4,7 @@ import pytest
 def test_convert():
     with pytest.raises(ValueError):
         convert("4.5")
-    with pytest.raises(ValueError):
+    with pytest.raises(TypeError):
         convert("cat/dog")
     with pytest.raises(ValueError):
         convert("6/3")
