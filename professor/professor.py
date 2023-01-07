@@ -27,7 +27,7 @@ def main():
                         else:
                             print("EEE")
                             continue
-    print("Score: {score}")
+    print(f"Score: {score}")
 
 
 
