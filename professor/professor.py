@@ -3,6 +3,7 @@ import random
 
 def main():
     level = get_level()
+    score = 0
     for i in range(10):
         try:
             x = generate_integer(level)
@@ -17,6 +18,7 @@ def main():
                     print("EEE")
                 else:
                     if ans == x + y:
+                        score += 1
                         break
                     else:
                         if i == 2:
@@ -25,7 +27,7 @@ def main():
                         else:
                             print("EEE")
                             continue
-
+    print("Score: {score}")
 
 
 
