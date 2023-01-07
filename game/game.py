@@ -1,4 +1,5 @@
 import random
+import sys
 
 while True:
     try:
@@ -19,7 +20,7 @@ while True:
     except ValueError:
         pass
     else:
-        if guess < : 1
+        if guess < 1:
             continue
         else:
             if guess < num:
@@ -30,3 +31,4 @@ while True:
                 continue
             else:
                 print("Just right!")
+                sys.exit()
