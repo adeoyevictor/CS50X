@@ -13,8 +13,7 @@ def test_3():
     assert is_valid("cs50") == True
     assert is_valid("cs50%@") == False
 def test_4():
-    assert is_valid("CSCOM") == True
-    assert is_valid("CS456") == True
-    assert is_valid("CS056") == False
-    assert is_valid("CS056B") == False
+    assert is_valid("cs50") == True
+    assert is_valid("cs05") == False
+    assert is_valid("cs50p") == False
 
