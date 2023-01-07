@@ -1,5 +1,5 @@
 def main():
-    text = input("Greeting: ").strip().lower()
+    text = input("Greeting: ").strip()
     res = value(text)
     print(res)
 
