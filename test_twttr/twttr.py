@@ -9,8 +9,8 @@ def shorten(word):
     for c in word:
         if c.lower() in ["a", "e", "i", "o", "u"]:
             pass
-    else:
-        result += c
+        else:
+            result += c
     return result
 
 
