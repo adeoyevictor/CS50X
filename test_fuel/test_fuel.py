@@ -9,7 +9,7 @@ def test_convert():
     with pytest.raises(ValueError):
         convert("6/3")
     with pytest.raises(ZeroDivisionError):
-    #     convert("6/0")
+        convert("6/0")
 
 def test_gauge():
     pass
