@@ -10,7 +10,7 @@ def test_convert():
         convert("6/3")
     with pytest.raises(ZeroDivisionError):
         convert("6/0")
-    assert convert()
+    assert convert("3/4") == 75
 
 def test_gauge():
     pass
