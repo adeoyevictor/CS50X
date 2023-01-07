@@ -3,11 +3,6 @@ import random
 
 def main():
     level = get_level()
-    # try:
-    #     rand_int = generate_integer(level)
-    #     print(rand_int)
-    # except ValueError:
-    #     print("Val Error")
     for i in range(10):
         try:
             x = generate_integer(level)
@@ -18,14 +13,16 @@ def main():
             for i in range(3):
                 try:
                     ans = int(input(f"{x} + {y} = "))
-                    if ans == x + y:
-                        break
-                    else:
-                        print("EEE")
-                        continue
                 except ValueError:
                     print("EEE")
-            # print(f"{x} + {y} = {x + y}")
+                else:
+                    if ans == x + y:
+                            break
+                    else:
+                            print("EEE")
+                            continue
+
+            print(f"{x} + {y} = {x + y}")
 
 
 
