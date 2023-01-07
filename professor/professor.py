@@ -3,8 +3,14 @@ import random
 
 def main():
     level = get_level()
-    rand_int = generate_integer(level)
-    print(rand_int)
+    # try:
+    #     rand_int = generate_integer(level)
+    #     print(rand_int)
+    # except ValueError:
+    #     print("Val Error")
+    for i in range(10):
+        
+
 
 
 
@@ -12,7 +18,7 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if level in [1, 2, 13]:
+            if level in [1, 2, 3]:
                 return level
             else:
                 continue
