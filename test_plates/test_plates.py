@@ -16,7 +16,4 @@ def test_4():
     assert is_valid("CS456") == True
     assert is_valid("CS056") == False
     assert is_valid("CS056B") == False
-def test_4():
-    assert is_valid("345OM") == False
-    assert is_valid("OM345") == True
- 
+
