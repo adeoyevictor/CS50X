@@ -25,7 +25,7 @@ def main():
                         continue
                 except ValueError:
                     print("EEE")
-            print(f"{x} + {y} = {x + y}")
+            # print(f"{x} + {y} = {x + y}")
 
 
 
