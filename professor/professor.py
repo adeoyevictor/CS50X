@@ -17,10 +17,10 @@ def main():
                     print("EEE")
                 else:
                     if ans == x + y:
-                            break
+                        break
                     else:
-                            print("EEE")
-                            continue
+                        print("EEE")
+                        continue
 
             print(f"{x} + {y} = {x + y}")
 
