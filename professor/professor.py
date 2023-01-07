@@ -20,8 +20,9 @@ def get_level():
 
 
 def generate_integer(level):
-    while True:
-        
+    if level == 1:
+        rand_int = random.randint(0, )
+
 
 
 
