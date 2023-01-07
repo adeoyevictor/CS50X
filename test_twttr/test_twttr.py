@@ -1,3 +1,4 @@
 from twttr import shorten
 
-def test_
+def test_hello():
+    assert shorten("Hello") == "Hll"
