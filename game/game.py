@@ -1,9 +1,14 @@
 
+
 while True:
     try:
         level = int(input("Level: "))
     except ValueError:
         pass
-    e
+    else:
+        if level < 1:
+            continue
+        else:
+            break
 
 
