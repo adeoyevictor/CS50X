@@ -13,6 +13,19 @@ def main():
             x = generate_integer(level)
             y = generate_integer(level)
         except ValueError:
+            pass
+        else:
+            for i in range(3):
+                try:
+                    ans = int(input(f"{x} + {y} = "))
+                    if ans == x + y:
+                        break
+                    else:
+                        print("EEE")
+                        continue
+                except ValueError:
+                    print("EEE")
+
 
 
 
