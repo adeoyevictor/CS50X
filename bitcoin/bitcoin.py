@@ -13,6 +13,6 @@ except:
 
 try:
     res = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-    print(f"{res.json()['bpi']['USD']['rate_float']:,.4f}")
+    print(f"${(n * res.json()['bpi']['USD']['rate_float']):,.4f}")
 except requests.RequestException:
     sys.exit("Request Error")
