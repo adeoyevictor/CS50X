@@ -8,3 +8,4 @@ def test_hello():
 def test_World():
     assert shorten("World") == "Wrld"
     assert shorten("World,") == "Wrld,"
+    assert shorten("WOrld,") == "Wrld,"
