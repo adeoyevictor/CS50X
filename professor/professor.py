@@ -1,5 +1,5 @@
 import random
-
+# import sys
 
 def main():
     level = get_level()
@@ -9,7 +9,12 @@ def main():
     # except ValueError:
     #     print("Val Error")
     for i in range(10):
-        
+        try:
+            x = generate_integer(level)
+            y = generate_integer(level)
+        except ValueError:
+
+
 
 
 
