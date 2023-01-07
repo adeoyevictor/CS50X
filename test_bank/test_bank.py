@@ -6,6 +6,7 @@ def test_1():
 
 def test_2():
     assert value("hi") == 20
+    assert value("h") == 20
     assert value("Hey") == 20
 
 def test_2():
