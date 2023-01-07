@@ -4,12 +4,13 @@ import pytest
 def test_convert():
     with pytest.raises(ValueError):
         convert("4.5")
-    with pytest.raises(TypeError):
+    with pytest.raises(ValueError):
         convert("cat/dog")
     with pytest.raises(ValueError):
         convert("6/3")
     with pytest.raises(ZeroDivisionError):
         convert("6/0")
+    assert convert()
 
 def test_gauge():
     pass
