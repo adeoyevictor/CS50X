@@ -1,9 +1,15 @@
 def main():
-
+    shorten()
 
 
 def shorten(word):
-    
+    result = ''
+    for c in word:
+    if c.lower() in ["a", "e", "i", "o", "u"]:
+        pass
+    else:
+        result += c
+    return result
 
 
 if __name__ == "__main__":
@@ -11,11 +17,6 @@ if __name__ == "__main__":
 
 
 
-text = input("Input: ")
 
-for c in text:
-    if c.lower() in ["a", "e", "i", "o", "u"]:
-        pass
-    else:
-        print(c, end="")
-print()
+
+
