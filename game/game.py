@@ -1,4 +1,4 @@
-
+import random
 
 while True:
     try:
@@ -11,4 +11,4 @@ while True:
         else:
             break
 
-
+num = random
