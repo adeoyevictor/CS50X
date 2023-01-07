@@ -11,3 +11,4 @@ def test_2():
 def test_2():
     assert value("good morning") == 100
     assert value("good evening") == 100
+    assert value("") == 100
