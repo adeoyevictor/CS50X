@@ -2,7 +2,8 @@ import random
 
 
 def main():
-    get_level()
+    level = get_level()
+    generate_integer(level)
 
 
 
@@ -19,7 +20,7 @@ def get_level():
 
 
 def generate_integer(level):
-    pass
+
 
 
 
