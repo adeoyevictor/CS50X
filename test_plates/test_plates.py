@@ -2,6 +2,8 @@ from plates import is_valid
 
 
 def test_1():
+    assert is_valid("CS50WERGH") == False
+    assert is_valid("C") == False
     assert is_valid("CS50") == True
 def test_2():
     assert is_valid("cs508") == True
