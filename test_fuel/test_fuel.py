@@ -13,4 +13,6 @@ def test_convert():
     assert convert("3/4") == 75
 
 def test_gauge():
-    pass
+    assert gauge(1) == "E"
+    assert gauge(10) == "10%"
+    assert gauge(99) == "F"
