@@ -1,12 +1,14 @@
 def main():
-    shorten()
+    txt = input("Input:")
+    txt = shorten(txt)
+    print(txt)
 
 
 def shorten(word):
     result = ''
     for c in word:
-    if c.lower() in ["a", "e", "i", "o", "u"]:
-        pass
+        if c.lower() in ["a", "e", "i", "o", "u"]:
+            pass
     else:
         result += c
     return result
