@@ -6,6 +6,7 @@ def convert(fraction):
         x, y = fraction.split("/")
         x = int(x)
         y = int(y)
+        percent =  round((x / y) * 100)
 
 
 def gauge(percentage):
