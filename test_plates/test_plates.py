@@ -7,6 +7,7 @@ def test_1():
     assert is_valid("CS50") == True
 def test_2():
     assert is_valid("cs508") == True
+    assert is_valid("c9s508") == False
 def test_3():
     assert is_valid("HPACB") == True
     assert is_valid("HPA09") == False
