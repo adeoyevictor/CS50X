@@ -11,4 +11,5 @@ while True:
         else:
             break
 
-num = random
+num = random.randint(1, level)
+print(num)
