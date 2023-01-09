@@ -6,7 +6,9 @@ if len(sys.argv) == 2 and sys.argv[1].strip().endswith('.py'):
     try:
         with open(sys.argv[1]) as file:
             for line in file:
-                if line.lstrip().startswith("#"):
+                if line.lstrip().startswith("#") :
+                    pass
+                elif not line.strip():
                     pass
                 else:
                     lines += 1
