@@ -25,5 +25,6 @@ else:
 
 with open(sys.argv[2], "a") as file:
     writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
+    
     for s in students:
         writer.writerow(s)
