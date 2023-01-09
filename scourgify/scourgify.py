@@ -9,8 +9,8 @@ if len(sys.argv) == 3 and sys.argv[1].strip().endswith('.csv') and sys.argv[2].s
             reader = csv.DictReader(file)
             for row in reader:
                 student = {}
-                student["first"] = row["name"].split(", ")[0]
-                student["last"] = row["name"].split(", ")[1]
+                student["first"] = row["name"].split(", ")[1]
+                student["last"] = row["name"].split(", ")[0]
                 student["house"] = row["house"]
                 students.append(student)
     except FileNotFoundError:
