@@ -6,7 +6,8 @@ if len(sys.argv) == 2 and sys.argv[1].strip().endswith('.csv'):
     try:
         with open(sys.argv[1]) as file:
             reader = csv.DictReader(file)
-            for row in reader:
+            print(tabulate(reader))
+            # for row in reader:
 
 
     except FileNotFoundError:
