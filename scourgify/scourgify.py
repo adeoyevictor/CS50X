@@ -19,10 +19,11 @@ if len(sys.argv) == 3 and sys.argv[1].strip().endswith('.csv') and sys.argv[2].s
 else:
     sys.exit("Invalid Files")
 
-for s in students:
-    print(s)
+
+
 
 
 with open(sys.argv[2], "a") as file:
     writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
-    writer.writerow({"name": name, "home": home})
+    for s in students:
+        writer.writerow(s)
