@@ -25,9 +25,7 @@ def main():
         except ValueError:
             pass
         else:
-            if day > 31 or day < 1:
-                continue
-            if month > 12 or month < 1:
+            if check(day, month):
                 continue
             break
         try:
@@ -43,9 +41,7 @@ def main():
         except:
             pass
         else:
-            if day > 31 or day < 1:
-                continue
-            if month > 12 or month < 1:
+            if check(day, month):
                 continue
             break
     frmt(year, month, day)
@@ -54,9 +50,13 @@ def main():
 
 def frmt(year, month, day):
     if month < 10:
-        month = f"0{month}"
+        month = f"{month:02}"
     if day < 10:
-        day = f"0{day}"
+        day = f"{day:02}"
     print(year, month, day, sep="-")
+
+def check(day, month):
+    return day > 31 or day < 1 or month > 12 or month < 1:
+
 
 main()
