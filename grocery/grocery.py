@@ -12,7 +12,7 @@ while True:
         break
 
 
-dict(sorted(lst.items()))
+# dict(sorted(lst.items()))
 
 for item in dict(sorted(lst.items())):
     print(lst[item], item)
