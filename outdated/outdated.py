@@ -22,7 +22,7 @@ def main():
             month = int(month)
             day = int(day)
             year = int(year)
-        except:
+        except ValueError:
             pass
         else:
             if day > 31 or day < 1:
