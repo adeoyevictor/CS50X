@@ -8,7 +8,9 @@ def main():
 
 def is_valid(s):
     if s[:2].isalpha() and s.isalnum() and len(s) >= 2 and len(s) <=6:
-        if s[2:].isalpha() or len(s) == 2:
+        print(s[2:], end='')
+        if s[2:].isalpha():
+            print("Lol")
             return True
         for i in range(len(s)):
             if s[i].isnumeric():
