@@ -1,5 +1,5 @@
 import random
-# import sys
+
 
 def main():
     level = get_level()
@@ -30,11 +30,6 @@ def main():
     print(f"Score: {score}")
 
 
-
-
-
-
-
 def get_level():
     while True:
         try:
@@ -57,9 +52,6 @@ def generate_integer(level):
     else:
         raise ValueError
     return rand_int
-
-
-
 
 
 if __name__ == "__main__":
