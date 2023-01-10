@@ -56,7 +56,7 @@ def frmt(year, month, day):
     print(year, month, day, sep="-")
 
 def check(day, month):
-    return day > 31 or day < 1 or month > 12 or month < 1:
+    return day > 31 or day < 1 or month > 12 or month < 1
 
 
 main()
