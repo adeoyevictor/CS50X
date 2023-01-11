@@ -17,8 +17,8 @@ if len(sys.argv) == 3:
 
             shirt.save(sys.argv[2])
         except FileNotFoundError:
-            sys.exit()
+            sys.exit("Invalid CL Arguments")
     else:
-        sys.exit("")
+        sys.exit("Invalid CL Arguments")
 else:
-    sys.exit()
+    sys.exit("Invalid CL Arguments")
