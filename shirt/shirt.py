@@ -1,10 +1,16 @@
 import sys
 import os
 
+
+exts = ['.jpg', '.jpeg', '.png']
+
+
 if len(sys.argv) == 3:
-    ext1 = os.path.splitext(sys.argv[1])[1]
-    ext2 = os.path.splitext(sys.argv[2])[1]
-    
-    print(ext1, ext2)
+    ext1 = os.path.splitext(sys.argv[1])[1].lower()
+    ext2 = os.path.splitext(sys.argv[2])[1].lower()
+    if ext1 in exts and ext2 in exts and ext1 == ext2:
+
+    else:
+        sys.exit()
 else:
     sys.exit()
