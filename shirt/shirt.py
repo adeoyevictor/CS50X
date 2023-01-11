@@ -13,7 +13,7 @@ if len(sys.argv) == 3:
             size = overlay.size
             shirt = Image.open(sys.argv[1])
             shirt = ImageOps.fit(shirt, size)
-            shirt.paste(overlay)
+            shirt.paste(overlay, overlay)
 
             shirt.save(sys.argv[2])
         except FileNotFoundError:
