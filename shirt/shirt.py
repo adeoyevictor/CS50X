@@ -12,6 +12,7 @@ if len(sys.argv) == 3:
             overlay = Image.open("shirt.png")
             size = overlay.size
             shirt = Image.open(sys.argv[1])
+
             shirt = ImageOps.fit(shirt, size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
             shirt.paste(overlay)
             shirt.save(sys.argv[2])
