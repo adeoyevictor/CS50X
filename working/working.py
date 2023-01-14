@@ -23,6 +23,9 @@ def check_valid_time(t):
     if ":" in time:
         hr, min = time.split(":")
         print(int(hr), int(min))
+    else:
+        if int(time) > 12 or int(time) < 1:
+            return False
     return True
 
 
