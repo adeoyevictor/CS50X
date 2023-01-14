@@ -38,6 +38,8 @@ def convert_valid_time(t):
         hr = time
         min = "00"
     if am_or_pm == 'AM':
+        if hr == '12':
+            hr = '00'
         
         ...
     elif am_or_pm == 'PM':
