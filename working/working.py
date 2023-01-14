@@ -41,6 +41,8 @@ def convert_valid_time(t):
     if am_or_pm == 'AM':
         if int(hr) == 12:
             hr = 0
+        else:
+            hr = int(hr)
     elif am_or_pm == 'PM':
         if int(hr) != 12:
             hr = int(hr) + 12
