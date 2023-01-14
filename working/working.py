@@ -40,11 +40,8 @@ def convert_valid_time(t):
     if am_or_pm == 'AM':
         if int(hr) == 12:
             hr = 0
-        
-
-        ...
     elif am_or_pm == 'PM':
-        ...
+        if int(hr) != 12:
 
 
 if __name__ == "__main__":
