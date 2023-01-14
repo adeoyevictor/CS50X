@@ -9,8 +9,15 @@ def main():
 def validate(ip):
     matches =  re.search(r"^([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)$", ip, re.IGNORECASE)
     if matches:
-        if int(matches.group(1)) >= 0 and int(matches.group(1)) <= 255 and int(matches.group(2)) >= 0 and int(matches.group(2)) <= 255 and int(matches.group(3)) >= 0 and int(matches.group(3)) <= 255 and int(matches.group(4)) >= 0 and int(matches.group(4)) <= 255:
-            return True
+        list_of_matches = []
+        for i in range(4):
+            list_of_matches.append(int(matches.group(i+1)))
+        for num in list_of_matches:
+            if num < 0 or num > 255:
+                return False
+            else:
+                return True
+        return True
     return False
 
 
