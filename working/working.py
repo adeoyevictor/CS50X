@@ -7,7 +7,8 @@ def main():
 
 
 def convert(s):
-    re.search(r"^[0-]$", s)
+    if re.search(r"^[0-9]{1,2}$", s):
+        print("Yes")
 
 
 if __name__ == "__main__":
