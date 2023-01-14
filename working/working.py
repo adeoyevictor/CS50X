@@ -31,17 +31,17 @@ def check_valid_time(t):
 
 def convert_valid_time(t):
     am_or_pm = t[-2:]
-    print(t)
     time = t.split(" ")[0]
     if ":" in time:
         hr, min = time.split(":")
     #     if int(hr) > 12 or int(hr) < 1 or int(min) > 59 or int(min) < 0:
     #         return False
     else:
-
+        hr = time
     #     if int(time) > 12 or int(time) < 1:
     #         return False
     # return True
+    print(hr)
 
 
 if __name__ == "__main__":
