@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    matches = re.findall(r"a", s, re.IGNORECASE)
+    matches = re.findall(r"um", s, re.IGNORECASE)
     return len(matches)
 
 
