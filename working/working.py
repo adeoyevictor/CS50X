@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-
+    re.search(r"^[0-]$", s)
 
 
 if __name__ == "__main__":
