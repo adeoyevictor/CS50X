@@ -11,4 +11,4 @@ def test_valid():
 def test_invalid():
     assert validate("800.80.80.80") == False
     assert validate("10.400.10.10") == False
-    assert validate("200.256.200.200") == False
+    assert validate("hello world") == False
