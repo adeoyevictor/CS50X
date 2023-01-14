@@ -7,7 +7,7 @@ def main():
 
 
 def validate(ip):
-    matches = re.search(r"([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)\.", ip, re.IGNORECASE)
+    matches = re.search(r"^([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)\.$", ip, re.IGNORECASE)
     if matches:
         print(matches.group(1))
         print(matches.group(2))
