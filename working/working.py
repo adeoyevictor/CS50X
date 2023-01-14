@@ -18,7 +18,7 @@ def convert(s):
         raise ValueError("Invalid Time")
 
 def check_valid_time(t):
-    am_or_pm = t[-2:]
+    # am_or_pm = t[-2:]
     time = t.split(" ")[0]
     if ":" in time:
         hr, min = time.split(":")
