@@ -8,8 +8,9 @@ def main():
 
 def parse(s):
     if matches :=  re.search(r'^<iframe.+src="(https?://(www?\.)youtube\.com/embed/[a-z0-9]+)".*></iframe>$', s, re.IGNORECASE):
-        url = re.sub(r"(www\.)?youtube\.com/embed", "youtu.be", matches.group(1))
-        return url
+        print(matches.group(1))
+        # url = re.sub(r"(www\.)?youtube\.com/embed", "https://youtu.be", matches.group(1))
+        # return url
 
 
 
