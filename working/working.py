@@ -36,7 +36,7 @@ def convert_valid_time(t):
     if ":" in time:
         hr, min = time.split(":")
     else:
-        hr = time
+        hr = int(time)
         min = "00"
     if am_or_pm == 'AM':
         if int(hr) == 12:
