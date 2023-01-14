@@ -44,7 +44,7 @@ def convert_valid_time(t):
     elif am_or_pm == 'PM':
         if int(hr) != 12:
             hr = int(hr) + 12
-    return f"{hr:02}:{min}"
+    return f"{hr}:{min}"
 
 
 if __name__ == "__main__":
