@@ -35,18 +35,17 @@ def convert_valid_time(t):
     time = t.split(" ")[0]
     if ":" in time:
         hr, min = time.split(":")
+        hr = int(hr)
     else:
         hr = int(time)
-        min = "00"
+        min = 0
     if am_or_pm == 'AM':
-        if int(hr) == 12:
+        if hr == 12:
             hr = 0
-        else:
-            hr = int(hr)
     elif am_or_pm == 'PM':
-        if int(hr) != 12:
-            hr = int(hr) + 12
-    return f"{hr:02}:{min}"
+        if hr != 12:
+            hr += + 12
+    return f"{hr:02}:{min:02}"
 
 
 if __name__ == "__main__":
