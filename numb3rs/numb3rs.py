@@ -7,7 +7,7 @@ def main():
 
 
 def validate(ip):
-    ...
+    return re.search(r"", ip)
 
 
 ...
