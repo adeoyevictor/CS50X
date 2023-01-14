@@ -12,6 +12,7 @@ def validate(ip):
         list_of_matches = []
         for i in range(4):
             list_of_matches.append(int(matches.group(i+1)))
+        print(list_of_matches)
         for num in list_of_matches:
             if num < 0 or num > 255:
                 return False
