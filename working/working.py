@@ -10,8 +10,9 @@ def convert(s):
     if matches := re.search(r"^([0-9]{1,2}:?(?:[0-9]{2})? (?:AM|PM)) to ([0-9]{1,2}:?(?:[0-9]{2})? (?:AM|PM))$", s):
         start, stop = matches.groups()
         if check_valid_time(start) and check_valid_time(stop):
-            convert_valid_time(start)
-            convert_valid_time(stop)
+            start = convert_valid_time(start)
+            stop = convert_valid_time(stop)
+            return f"{start} to {stop}"
         else:
             raise ValueError("Invalid Time")
 
@@ -43,7 +44,7 @@ def convert_valid_time(t):
     elif am_or_pm == 'PM':
         if int(hr) != 12:
             hr = int(hr) + 12
-    print(hr, min)
+    return f"{hr:02}:{min}"
 
 
 if __name__ == "__main__":
