@@ -7,8 +7,8 @@ def main():
 
 
 def parse(s):
-    if matches :=  re.search(r"^.+$", s, re.IGNORECASE):
-        
+    if matches :=  re.search(r"^<iframe.+src=()$", s, re.IGNORECASE):
+
 
 
 
