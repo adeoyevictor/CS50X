@@ -34,11 +34,11 @@ def convert_valid_time(t):
     print(t)
     time = t.split(" ")[0]
     if ":" in time:
-    #     hr, min = time.split(":")
+        hr, min = time.split(":")
     #     if int(hr) > 12 or int(hr) < 1 or int(min) > 59 or int(min) < 0:
     #         return False
     else:
-        
+
     #     if int(time) > 12 or int(time) < 1:
     #         return False
     # return True
