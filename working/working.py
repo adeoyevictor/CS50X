@@ -8,11 +8,20 @@ def main():
 
 def convert(s):
     if matches := re.search(r"^([0-9]{1,2}:?(?:[0-9]{2})? (?:AM|PM)) to ([0-9]{1,2}:?(?:[0-9]{2})? (?:AM|PM))$", s):
-        print(matches.group(1))
-        print(matches.group(2))
-    else:
-        raise ValueError
+        start, stop = matches.groups()
+        if check_valid_time(start) and check_valid_time(stop):
+            ...
+        else:
+            raise ValueError("Invalid Time")
 
+    else:
+        raise ValueError("Invalid Time")
+
+def check_valid_time(t):
+    print(t)
+    am_or_pm = t[-1:]
+    print(am_or_pm)
+    return True
 
 
 if __name__ == "__main__":
