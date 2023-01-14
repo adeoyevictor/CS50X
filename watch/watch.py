@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    if matches :=  re.search(r'^<iframe.*src="(https?://(www?\.)youtube\.com/embed/[a-z0-9]+)".*></iframe>$', s, re.IGNORECASE):
+    if matches :=  re.search(r'^<iframe.*src="(https?://(www\.)?youtube\.com/embed/[a-z0-9]+)".*></iframe>$', s, re.IGNORECASE):
         # print(matches.group(1))
         url = re.sub(r"https?://(www\.)?youtube\.com/embed", "https://youtu.be", matches.group(1))
         return url
