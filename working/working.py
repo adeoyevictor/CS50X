@@ -20,8 +20,10 @@ def convert(s):
 def check_valid_time(t):
     am_or_pm = t[-2:]
     time = t.split(" ")[0]
+    print(int(time))
     if ":" in time:
         hr, min = time.split(":")
+        print(int(hr), int(min))
         if int(hr) > 12 or int(hr) < 1 or int(min) > 59 or int(min) < 0:
             return False
     else:
