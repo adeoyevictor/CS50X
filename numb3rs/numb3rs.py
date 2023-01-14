@@ -7,10 +7,10 @@ def main():
 
 
 def validate(ip):
-    if re.search(r"^([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)\.$", ip, re.IGNORECASE):
-        print("True")
-    else:
-        print("False")
+    matches =  re.search(r"^([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)$", ip, re.IGNORECASE)
+    if matches:
+        if int(matches.group(1)) 
+    return False
 
 
 
