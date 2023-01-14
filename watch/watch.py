@@ -8,7 +8,7 @@ def main():
 
 def parse(s):
     if matches :=  re.search(r"^.+$", s, re.IGNORECASE):
-        print("YES")
+        
 
 
 
