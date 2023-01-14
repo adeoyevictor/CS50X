@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    if re.search(r"^[0-9]{1,2}:?()$", s):
+    if re.search(r"^[0-9]{1,2}:?([0-9]{2})? $", s):
         print("Yes")
 
 
