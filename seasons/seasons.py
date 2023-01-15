@@ -20,7 +20,9 @@ def main():
 
 
 def check_format(d):
-    return re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", d, re.IGNORECASE)
+    if re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", d, re.IGNORECASE):
+        return True
+    return False
 
 if __name__ == "__main__":
     main()
