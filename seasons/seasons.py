@@ -2,6 +2,7 @@ from datetime import date
 
 
 def main():
+    dob = input("Date of birth: ")
     ...
 
 
