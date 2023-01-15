@@ -13,7 +13,7 @@ def main():
         today = date.today()
         days = (today - dob).days
         mins = days * 24 * 60
-
+        print(p.number_to_words(mins))
     else:
         sys.exit("Invalid Date")
 
