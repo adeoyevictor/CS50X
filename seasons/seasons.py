@@ -1,12 +1,13 @@
 from datetime import date
 import re
+import sys
 
 
 def main():
     if check_format(input("Date of birth: ")):
         print("Valid")
     else:
-        print("Invalid")
+        sys.exit("Invalid Date")
 
 
 def check_format(d):
