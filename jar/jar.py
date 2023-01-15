@@ -34,13 +34,13 @@ class Jar:
 
     @size.setter
     def size(self, size):
-        
+
         self._size = size
 
 
 
 jar1 = Jar(10)
 print(
-
-jar1.capacity
+jar1.capacity, jar1.size
 )
+print(jar)
