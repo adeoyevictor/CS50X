@@ -41,6 +41,9 @@ class Jar:
 
 jar1 = Jar(10)
 print(
-jar1.capacity, jar1.size
+jar1.capacity, jar1.size, jar1
 )
-print(jar)
+jar1.deposit(5)
+print(
+jar1.capacity, jar1.size, jar1
+)
