@@ -9,7 +9,8 @@ def main():
         # dob = dob.split("-")
         dob= date.fromisoformat(dob)
         today = date.today()
-        print((today - dob))
+        days = (today - dob).total_days()
+        print(days)
     else:
         sys.exit("Invalid Date")
 
