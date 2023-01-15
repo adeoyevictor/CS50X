@@ -4,9 +4,9 @@ import sys
 
 
 def main():
-    if check_format(input("Date of birth: ")):
+    dob = input("Date of birth: ")
+    if check_format(dob):
         today = date.today()
-        print(today)
     else:
         sys.exit("Invalid Date")
 
