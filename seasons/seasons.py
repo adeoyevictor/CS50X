@@ -1,6 +1,9 @@
 from datetime import date, timedelta
 import re
 import sys
+import inflect
+
+p = inflect.engine()
 
 
 def main():
@@ -10,6 +13,7 @@ def main():
         today = date.today()
         days = (today - dob).days
         mins = days * 24 * 60
+
     else:
         sys.exit("Invalid Date")
 
