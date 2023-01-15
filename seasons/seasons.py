@@ -7,7 +7,6 @@ def main():
     dob = input("Date of birth: ")
     if check_format(dob):
         today = date.today()
-        print(date.__sub__(today, dob))
     else:
         sys.exit("Invalid Date")
 
