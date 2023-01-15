@@ -5,7 +5,8 @@ import sys
 
 def main():
     if check_format(input("Date of birth: ")):
-        print("Valid")
+        today = date.today()
+        print(today)
     else:
         sys.exit("Invalid Date")
 
