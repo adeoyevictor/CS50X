@@ -9,7 +9,7 @@ def main():
         # dob = dob.split("-")
         dob= date.fromisoformat(dob)
         today = date.today()
-        print(type(today - dob))
+        print((today - dob))
     else:
         sys.exit("Invalid Date")
 
