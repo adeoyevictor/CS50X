@@ -13,5 +13,5 @@ class PDF(FPDF):
 # Instantiation of inherited class
 pdf = PDF()
 pdf.add_page()
-pdf.image("shirtificate.png", x='C')
+pdf.image("shirtificate.png")
 pdf.output("shirtificate.pdf")
