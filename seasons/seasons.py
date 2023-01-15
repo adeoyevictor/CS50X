@@ -13,7 +13,7 @@ def main():
         today = date.today()
         days = (today - dob).days
         mins = days * 24 * 60
-        mins = p.number_to_words(mins).replace("and ", "")
+        mins = p.number_to_words(mins).replace("and ", "").capitalize()
         print(f"{mins} minutes")
     else:
         sys.exit("Invalid Date")
