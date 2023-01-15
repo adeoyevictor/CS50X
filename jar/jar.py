@@ -1,35 +1,39 @@
 class Jar:
     def __init__(self, capacity=12):
-        if capacity < 0:
-            raise ValueError
         self.capacity = capacity
-        self.n = 0
-
+        self.size = 0
 
     def __str__(self):
-        return "🍪" * self.n
+        return "🍪" * self.size
 
     def deposit(self, n):
-        if (self.n + n) > capacity:
+        if (self.size + n) > self.capacity:
             raise ValueError("Jar is full")
         else:
-            self.n += n
+            self.size += n
 
     def withdraw(self, n):
-        if n > self.n:
+        if n > self.size:
             raise ValueError("Not enough cookies")
         else:
-            self.n -= n
-        ...
+            self.size -= n
 
     @property
     def capacity(self):
         return self._capacity
-    
+
+    @capacity.setter
+    def capacity(self, capacity):
+        if capacity < 0:
+            raise ValueError
+        self._capacity = capacity
 
     @property
     def size(self):
-        return self._n
+        return self._size
+
+
+
 
 jar1 = Jar(10)
 print(
