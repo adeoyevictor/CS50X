@@ -6,6 +6,8 @@ import sys
 def main():
     dob = input("Date of birth: ")
     if check_format(dob):
+        dob = dob.split("-")
+        
         today = date.today()
     else:
         sys.exit("Invalid Date")
