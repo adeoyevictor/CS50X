@@ -6,11 +6,10 @@ import sys
 def main():
     dob = input("Date of birth: ")
     if check_format(dob):
-        # dob = dob.split("-")
         dob= date.fromisoformat(dob)
         today = date.today()
-        days = (today - dob).total_days()
-        print(days)
+        days = (today - dob).days
+        mins = days * 24 * 60
     else:
         sys.exit("Invalid Date")
 
