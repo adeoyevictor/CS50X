@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 import re
 import sys
 
@@ -9,7 +9,7 @@ def main():
         # dob = dob.split("-")
         dob= date.fromisoformat(dob)
         today = date.today()
-        print(today - dob)
+        print(type(today - dob))
     else:
         sys.exit("Invalid Date")
 
